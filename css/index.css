@@ -171,7 +171,7 @@ h3 {
 h4 {
   font-weight: bold;
   font-size: 2.4rem;
-  color: logo-color;
+  color: #FFFFFF;
 }
 h5 {
   font-size: 2rem;
@@ -187,7 +187,7 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
+  max-width: 950px;
   width: 100%;
   margin: 0 auto;
   font-size: 1.6rem;
@@ -195,3 +195,63 @@ img {
   /* temp!!!! */
 }
 /* Imports */
+header {
+  position: relative;
+}
+header h1 {
+  position: absolute;
+  bottom: 50px;
+  left: 70px;
+}
+.content,
+.content-reverse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+  margin: 20px;
+  padding: 20px;
+}
+.content .content-text,
+.content-reverse .content-text {
+  flex: 1;
+}
+.content img,
+.content-reverse img {
+  flex: 1;
+}
+.content h3,
+.content-reverse h3,
+.content p,
+.content-reverse p {
+  margin-bottom: 20px;
+}
+.content .btn,
+.content-reverse .btn {
+  width: 30%;
+  background-color: #FFFFFF;
+  color: #222222;
+  border: 1px solid #222222;
+  border-radius: none;
+  border-bottom: 2px solid #616161;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 10px 5px;
+}
+.content .btn:hover,
+.content-reverse .btn:hover {
+  color: #FFFFFF;
+  background-color: #222222;
+  border: 1px solid #FFFFFF;
+  border-top: 2px solid #616161;
+  cursor: pointer;
+}
+.content .content-text {
+  margin-right: 2%;
+}
+.content-reverse {
+  flex-direction: row-reverse;
+}
+.content-reverse .content-text {
+  margin-left: 2%;
+}

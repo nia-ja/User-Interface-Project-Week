@@ -1,0 +1,40 @@
+header {
+    position: relative;
+    h1 {
+        position: absolute;
+        bottom: 50px;
+        left: 70px;
+    }
+}
+
+.content, .content-reverse {
+    .flex;
+    border: 1px solid red;
+    margin: 20px;
+    padding: 20px;
+    .content-text {
+        flex: 1;
+    }
+    img {
+        flex: 1;
+    }
+    h3, p {
+        margin-bottom: 20px;
+    }
+    .btn {
+        .button();
+    }
+}
+
+.content {
+    .content-text {
+        margin-right: 2%;
+    }
+}
+
+.content-reverse {
+    flex-direction: row-reverse;
+    .content-text {
+        margin-left: 2%; 
+    }
+}
