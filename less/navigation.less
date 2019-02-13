@@ -13,9 +13,24 @@ nav {
             padding: 10px 5%;
         }
     }
-    .expended {
+    .menu {
         .flex(space-between, flex-start);
         flex-direction: column;
         display: none;
+    }
+    .menu--open {
+        .flex(center; flex-start);
+        width: 100%;
+        height: 100vh;
+        // background-color: #98A2AE;
+        a {
+            min-width: 195px;
+            margin: 0 auto;
+            @media @mobile {
+            }
+            &:hover {
+                color: @dark-gray;
+            }
+        }
     }
 }
