@@ -5,19 +5,37 @@ header {
         position: absolute;
         bottom: 50px;
         left: 7%;
+        @media @mobile {
+            left: 5%;
+            bottom: 20px;
+            font-size: 5.8rem;
+            line-height: 7rem;
+        }
     }
 }
+
 
 // TOP CONTENT styling
 .content, .content-reverse {
     .flex;
     margin: 20px 2%;
     padding: 20px 2%;
+    @media @mobile {
+        margin: 0;
+        padding: 20px 3%;
+    }
     .content-text {
-        flex: 1;
+        width: 50%;
+        @media @mobile {
+            width: 100%;
+        }
     }
     img {
-        flex: 1;
+        width: 50%;
+        @media @mobile {
+            width: 100%;
+            margin-bottom: 20px;
+        }
     }
     h3, p {
         margin-bottom: 20px;
@@ -28,20 +46,32 @@ header {
 }
 
 .content {
+    @media @mobile {
+        flex-direction: column-reverse;
+    }
     .content-text {
         margin-right: 2%;
+        @media @mobile {
+        margin-right: 0;
+        }
     }
 }
 
 .content-reverse {
     flex-direction: row-reverse;
+    @media @mobile {
+        flex-direction: column-reverse;
+    }
     .content-text {
-        margin-left: 2%; 
+        margin-left: 2%;
+        @media @mobile {
+            margin-left: 0;
+        }
     }
 }
 
-// RECENT PROJECTS styling
 
+// RECENT PROJECTS styling
 .recent-projects {
     width: 100%;
     .content-header, .column-content, .column-content-reverse {
@@ -49,11 +79,27 @@ header {
         padding: 20px 2%;
     }
 
+    .content-header {
+        @media @mobile {
+            margin: 0 2%;
+        }
+    }
+
+    .column-content, .column-content-reverse {
+        @media @mobile {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
     .column-content, .column-content-reverse {
         position: relative;
         img {
             width: 100%;
             margin-bottom: 30px;
+            @media @mobile {
+                margin-bottom: 40px;
+            }
         }
         h3 {
             width: 35%;
@@ -62,15 +108,24 @@ header {
             padding: 20px 0.5%;
             text-align: center;
             top: 210px;
+            @media @mobile {
+                width: 90%;
+                top: 120px;
+                left: 5%;
+                right: 5%;
+            }
         }
         p {
             margin: 30px 27%;
+            @media @mobile {
+                margin: 30px 5%;
+            }
         }
         
     }
     .column-content {
        h3 {
-           right: 19px;
+        right: 2.1%;
        } 
     }
 }
