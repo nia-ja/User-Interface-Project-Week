@@ -225,7 +225,7 @@ nav .expended {
     line-height: 2.8rem;
   }
 }
-.bottom p {
+.bottom p.footer {
   font-size: 1.4rem;
   line-height: 2.6rem;
 }
@@ -273,7 +273,7 @@ footer {
     padding-left: 3%;
   }
 }
-footer p {
+footer p.footer {
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -468,5 +468,22 @@ header.services h1 {
   left: 7%;
 }
 .services-top-content p {
-  margin: 45px;
+  margin: 5%;
+}
+.tabs {
+  margin: 0 5%;
+}
+.tabs-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.tabs-links .tabs-link {
+  border: 1px solid #222222;
+  padding: 15px 5%;
+}
+.tabs-links .tabs-link-selected {
+  color: #FFFFFF;
+  background-color: #5E9EB8;
 }
