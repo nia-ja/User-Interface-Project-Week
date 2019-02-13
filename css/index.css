@@ -191,6 +191,20 @@ img {
 header {
   position: relative;
 }
+@media (max-width: 500px) {
+  header .header-img {
+    display: none;
+  }
+}
+header .mobile-header-img {
+  display: none;
+}
+@media (max-width: 500px) {
+  header .mobile-header-img {
+    display: block;
+    width: 100%;
+  }
+}
 header h1 {
   position: absolute;
   bottom: 50px;
@@ -199,8 +213,8 @@ header h1 {
 @media (max-width: 500px) {
   header h1 {
     left: 5%;
-    bottom: 20px;
-    font-size: 5.8rem;
+    bottom: 15px;
+    font-size: 5.6rem;
     line-height: 7rem;
   }
 }
@@ -229,13 +243,24 @@ header h1 {
     width: 100%;
   }
 }
-.content img,
-.content-reverse img {
+.content .content-img,
+.content-reverse .content-img {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .content img,
-  .content-reverse img {
+  .content .content-img,
+  .content-reverse .content-img {
+    display: none;
+  }
+}
+.content .mobile-content-img,
+.content-reverse .mobile-content-img {
+  display: none;
+}
+@media (max-width: 500px) {
+  .content .mobile-content-img,
+  .content-reverse .mobile-content-img {
+    display: block;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -317,6 +342,10 @@ header h1 {
     margin: 0 2%;
   }
 }
+.recent-projects .column-content,
+.recent-projects .column-content-reverse {
+  position: relative;
+}
 @media (max-width: 500px) {
   .recent-projects .column-content,
   .recent-projects .column-content-reverse {
@@ -324,19 +353,27 @@ header h1 {
     padding: 0;
   }
 }
-.recent-projects .column-content,
-.recent-projects .column-content-reverse {
-  position: relative;
-}
-.recent-projects .column-content img,
-.recent-projects .column-content-reverse img {
+.recent-projects .column-content .projects-img,
+.recent-projects .column-content-reverse .projects-img {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 @media (max-width: 500px) {
-  .recent-projects .column-content img,
-  .recent-projects .column-content-reverse img {
-    margin-bottom: 40px;
+  .recent-projects .column-content .projects-img,
+  .recent-projects .column-content-reverse .projects-img {
+    display: none;
+  }
+}
+.recent-projects .column-content .mobile-projects-img,
+.recent-projects .column-content-reverse .mobile-projects-img {
+  display: none;
+}
+@media (max-width: 500px) {
+  .recent-projects .column-content .mobile-projects-img,
+  .recent-projects .column-content-reverse .mobile-projects-img {
+    display: block;
+    width: 100%;
+    margin-bottom: 70px;
   }
 }
 .recent-projects .column-content h3,
@@ -346,20 +383,20 @@ header h1 {
   background-color: #D8D8D8;
   padding: 20px 0.5%;
   text-align: center;
-  top: 210px;
+  top: 32%;
 }
 @media (max-width: 500px) {
   .recent-projects .column-content h3,
   .recent-projects .column-content-reverse h3 {
     width: 90%;
-    top: 120px;
+    top: 265px;
     left: 5%;
     right: 5%;
   }
 }
 .recent-projects .column-content p,
 .recent-projects .column-content-reverse p {
-  margin: 30px 27%;
+  margin: 20px 27%;
 }
 @media (max-width: 500px) {
   .recent-projects .column-content p,
@@ -368,7 +405,7 @@ header h1 {
   }
 }
 .recent-projects .column-content h3 {
-  right: 2.1%;
+  right: 2%;
 }
 header.services {
   position: relative;
@@ -434,6 +471,9 @@ header.services h1 {
 }
 nav {
   background-color: #98A2AE;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 nav .top {
   display: flex;
@@ -467,11 +507,18 @@ nav .expended {
 @media (max-width: 500px) {
   .bottom h5 {
     line-height: 2.8rem;
+    font-size: 2.4rem;
   }
 }
 .bottom p.footer {
   font-size: 1.4rem;
   line-height: 2.6rem;
+}
+@media (max-width: 500px) {
+  .bottom p.footer {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
 }
 .contact {
   display: flex;
@@ -483,7 +530,7 @@ nav .expended {
   .contact {
     flex-direction: column;
     width: 100%;
-    padding: 40px 3% 0 3%;
+    padding: 40px 5% 0 5%;
   }
 }
 @media (max-width: 500px) {

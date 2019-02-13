@@ -1,14 +1,26 @@
 // HEADER styling
 header {
     position: relative;
+    .header-img {
+        @media @mobile {
+            display: none;
+        }
+    }
+    .mobile-header-img {
+        display: none;
+        @media @mobile {
+            display: block;
+            width: 100%;
+        }
+    }
     h1 {
         position: absolute;
         bottom: 50px;
         left: 7%;
         @media @mobile {
             left: 5%;
-            bottom: 20px;
-            font-size: 5.8rem;
+            bottom: 15px;
+            font-size: 5.6rem;
             line-height: 7rem;
         }
     }
@@ -30,9 +42,16 @@ header {
             width: 100%;
         }
     }
-    img {
+    .content-img {
         width: 50%;
         @media @mobile {
+            display: none;
+        }
+    }
+    .mobile-content-img {
+        display: none;
+        @media @mobile {
+            display: block;
             width: 100%;
             margin-bottom: 20px;
         }
@@ -86,19 +105,24 @@ header {
     }
 
     .column-content, .column-content-reverse {
+        position: relative;
         @media @mobile {
             margin: 0;
             padding: 0;
         }
-    }
-
-    .column-content, .column-content-reverse {
-        position: relative;
-        img {
+        .projects-img {
             width: 100%;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
             @media @mobile {
-                margin-bottom: 40px;
+                display: none;
+            }
+        }
+        .mobile-projects-img {
+            display: none;
+            @media @mobile {
+                display: block;
+                width: 100%;
+                margin-bottom: 70px;
             }
         }
         h3 {
@@ -107,16 +131,16 @@ header {
             background-color: #D8D8D8;
             padding: 20px 0.5%;
             text-align: center;
-            top: 210px;
+            top: 32%;
             @media @mobile {
                 width: 90%;
-                top: 120px;
+                top: 265px;
                 left: 5%;
                 right: 5%;
             }
         }
         p {
-            margin: 30px 27%;
+            margin: 20px 27%;
             @media @mobile {
                 margin: 30px 5%;
             }
@@ -125,7 +149,7 @@ header {
     }
     .column-content {
        h3 {
-        right: 2.1%;
+        right: 2%;
        } 
     }
 }
