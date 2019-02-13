@@ -1,17 +1,19 @@
+// HEADER styling
 header {
     position: relative;
     h1 {
         position: absolute;
         bottom: 50px;
-        left: 70px;
+        left: 7%;
     }
 }
 
+// TOP CONTENT styling
 .content, .content-reverse {
     .flex;
     border: 1px solid red;
-    margin: 20px;
-    padding: 20px;
+    margin: 20px 2%;
+    padding: 20px 2%;
     .content-text {
         flex: 1;
     }
@@ -36,5 +38,41 @@ header {
     flex-direction: row-reverse;
     .content-text {
         margin-left: 2%; 
+    }
+}
+
+// RECENT PROJECTS styling
+
+.recent-projects {
+    width: 100%;
+    .content-header, .column-content, .column-content-reverse {
+        margin: 20px 2%;
+        padding: 20px 2%;
+        border: 1px solid red;
+    }
+
+    .column-content, .column-content-reverse {
+        position: relative;
+        img {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        h3 {
+            width: 35%;
+            position: absolute;
+            background-color: #D8D8D8;
+            padding: 20px 0.5%;
+            text-align: center;
+            top: 210px;
+        }
+        p {
+            margin: 30px 27%;
+        }
+        
+    }
+    .column-content {
+       h3 {
+           right: 19px;
+       } 
     }
 }

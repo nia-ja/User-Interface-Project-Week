@@ -201,7 +201,7 @@ header {
 header h1 {
   position: absolute;
   bottom: 50px;
-  left: 70px;
+  left: 7%;
 }
 .content,
 .content-reverse {
@@ -209,8 +209,8 @@ header h1 {
   justify-content: space-between;
   align-items: center;
   border: 1px solid red;
-  margin: 20px;
-  padding: 20px;
+  margin: 20px 2%;
+  padding: 20px 2%;
 }
 .content .content-text,
 .content-reverse .content-text {
@@ -254,4 +254,39 @@ header h1 {
 }
 .content-reverse .content-text {
   margin-left: 2%;
+}
+.recent-projects {
+  width: 100%;
+}
+.recent-projects .content-header,
+.recent-projects .column-content,
+.recent-projects .column-content-reverse {
+  margin: 20px 2%;
+  padding: 20px 2%;
+  border: 1px solid red;
+}
+.recent-projects .column-content,
+.recent-projects .column-content-reverse {
+  position: relative;
+}
+.recent-projects .column-content img,
+.recent-projects .column-content-reverse img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.recent-projects .column-content h3,
+.recent-projects .column-content-reverse h3 {
+  width: 35%;
+  position: absolute;
+  background-color: #D8D8D8;
+  padding: 20px 0.5%;
+  text-align: center;
+  top: 210px;
+}
+.recent-projects .column-content p,
+.recent-projects .column-content-reverse p {
+  margin: 30px 27%;
+}
+.recent-projects .column-content h3 {
+  right: 19px;
 }
