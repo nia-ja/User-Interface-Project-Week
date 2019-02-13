@@ -459,3 +459,14 @@ header h1 {
 .recent-projects .column-content h3 {
   right: 2.1%;
 }
+header.services {
+  position: relative;
+}
+header.services h1 {
+  position: absolute;
+  bottom: 10px;
+  left: 7%;
+}
+.services-top-content p {
+  margin: 45px;
+}
