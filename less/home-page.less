@@ -19,9 +19,9 @@ header {
         left: 7%;
         @media @mobile {
             left: 5%;
-            bottom: 15px;
-            font-size: 5.6rem;
-            line-height: 7rem;
+            bottom: 30px;
+            font-size: 5.4rem;
+            line-height: 6.7rem;
         }
     }
 }
@@ -105,40 +105,50 @@ header {
     }
 
     .column-content, .column-content-reverse {
-        position: relative;
         @media @mobile {
             margin: 0;
             padding: 0;
         }
-        .projects-img {
-            width: 100%;
-            margin-bottom: 50px;
+        .content-top {
+            position: relative;
+            display: inline-block;
+            max-width: 100%;
+            margin-bottom: 60px;
             @media @mobile {
-                display: none;
+                width: 100%;
             }
-        }
-        .mobile-projects-img {
-            display: none;
-            @media @mobile {
+            .projects-img {
                 display: block;
                 width: 100%;
-                margin-bottom: 70px;
+                @media @mobile {
+                    display: none;
+                }
             }
-        }
-        h3 {
-            width: 35%;
-            position: absolute;
-            background-color: #D8D8D8;
-            padding: 20px 0.5%;
-            text-align: center;
-            top: 32%;
-            @media @mobile {
-                width: 90%;
-                top: 265px;
-                left: 5%;
-                right: 5%;
+            .mobile-projects-img {
+                display: none;
+                @media @mobile {
+                    display: block;
+                    width: 100%;
+                }
             }
-        }
+            h3 {
+                text-align: center;
+                height: 42px;
+                position: absolute;
+                top: 80%;
+                z-index: 1;
+                width: 40%;
+                min-width: 65px;
+                background-color: #D8D8D8;
+                padding: 30px 1% 50px 1%;
+                @media @mobile {
+                    width: 90%;
+                    top: 95%;
+                    left: 5%;
+                    right: 5%;
+                }
+            }
+        } 
         p {
             margin: 20px 27%;
             @media @mobile {
@@ -149,7 +159,7 @@ header {
     }
     .column-content {
        h3 {
-        right: 2%;
+        right: 0;
        } 
     }
 }
