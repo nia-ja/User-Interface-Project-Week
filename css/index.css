@@ -390,7 +390,6 @@ header h1 {
   height: 42px;
   position: absolute;
   top: 80%;
-  z-index: 1;
   width: 40%;
   min-width: 65px;
   background-color: #D8D8D8;
@@ -421,6 +420,20 @@ header h1 {
 header.services {
   position: relative;
 }
+@media (max-width: 500px) {
+  header.services .services-header-img {
+    display: none;
+  }
+}
+header.services .mobile-services-header-img {
+  display: none;
+}
+@media (max-width: 500px) {
+  header.services .mobile-services-header-img {
+    display: block;
+    width: 100%;
+  }
+}
 header.services h1 {
   position: absolute;
   bottom: 10px;
@@ -438,6 +451,12 @@ header.services h1 {
   align-items: center;
   margin-bottom: 40px;
 }
+@media (max-width: 500px) {
+  .tabs-links {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+}
 .tabs-links .tabs-link {
   border: 1px solid #222222;
   width: 23%;
@@ -446,12 +465,23 @@ header.services h1 {
   font-weight: bold;
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  .tabs-links .tabs-link {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
 .tabs-links .tabs-link-selected {
   color: #FFFFFF;
   background-color: #5E9EB8;
 }
 .tabs-items {
   margin-bottom: 80px;
+}
+@media (max-width: 500px) {
+  .tabs-items {
+    margin-bottom: 50px;
+  }
 }
 .tabs-item {
   display: none;
@@ -463,15 +493,44 @@ header.services h1 {
   flex-wrap: wrap;
   margin: 10px 0;
 }
+@media (max-width: 500px) {
+  .tabs-item-selected {
+    margin-top: 0;
+  }
+}
 .tabs-item-selected .tabs-item-title {
   width: 100%;
   font-weight: bold;
   font-size: 2.8rem;
   margin-bottom: 15px;
 }
+@media (max-width: 500px) {
+  .tabs-item-selected .tabs-item-title {
+    margin-bottom: 30px;
+  }
+}
 .tabs-item-selected .tab-item-text {
   margin-right: 20px;
   width: 50%;
+}
+@media (max-width: 500px) {
+  .tabs-item-selected .tab-item-text {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .tabs-item-selected .tab-item-image {
+    display: none;
+  }
+}
+.tabs-item-selected .mobile-tab-item-image {
+  display: none;
+}
+@media (max-width: 500px) {
+  .tabs-item-selected .mobile-tab-item-image {
+    display: block;
+    width: 100%;
+  }
 }
 .tabs-item-content {
   font-size: 1.6rem;
@@ -479,6 +538,16 @@ header.services h1 {
 }
 .tabs-item-content:first-child {
   margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .tabs-item-content:first-child {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .tabs-item-content {
+    margin-bottom: 30px;
+  }
 }
 nav {
   background-color: #98A2AE;

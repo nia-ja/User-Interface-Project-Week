@@ -1,6 +1,18 @@
 // HEADER styling
 header.services {
     position: relative;
+    .services-header-img {
+        @media @mobile {
+            display: none;
+        }
+    }
+    .mobile-services-header-img {
+        display: none;
+        @media @mobile {
+            display: block;
+            width: 100%;
+        }
+    }
     h1 {
         position: absolute;
         bottom: 10px;
@@ -23,6 +35,10 @@ header.services {
 .tabs-links {
     .flex;
     margin-bottom: 40px;
+    @media @mobile {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
     .tabs-link {
         border: 1px solid @dark-gray;
         width: 23%;
@@ -30,6 +46,10 @@ header.services {
         text-align: center;
         font-weight: bold;
         font-size: 2rem;
+        @media @mobile {
+            width: 100%;
+            margin: 10px auto;
+        }
     }
     .tabs-link-selected {
         color: @white;
@@ -39,6 +59,9 @@ header.services {
 
 .tabs-items {
     margin-bottom: 80px;
+    @media @mobile {
+        margin-bottom: 50px;
+    }
 }
 
 .tabs-item {
@@ -48,28 +71,50 @@ header.services {
 .tabs-item-selected {
     .flex;
     flex-wrap: wrap;
+    margin: 10px 0;
+    @media @mobile {
+        margin-top: 0;
+    }
     .tabs-item-title {
         width: 100%;
         font-weight: bold;
         font-size: 2.8rem;
         margin-bottom: 15px;
+        @media @mobile {
+            margin-bottom: 30px;
+        }
     }
-
-    margin: 10px 0;
     .tab-item-text {
         margin-right: 20px;
         width: 50%; 
+        @media @mobile {
+            width: 100%;
+        }
+    }
+    .tab-item-image {
+        @media @mobile {
+            display: none;
+        }
+    }
+    .mobile-tab-item-image {
+        display: none;
+        @media @mobile {
+            display: block;
+            width: 100%;
+        }
     }
 }
-
-// .tabs-item-hidden {
-//     display: none;
-// }
     
 .tabs-item-content {
     font-size: 1.6rem;
     line-height: 2.4rem;
     &:first-child {
         margin-bottom: 40px;
+        @media @mobile {
+            margin-bottom: 30px;
+        }
+    }
+    @media @mobile {
+        margin-bottom: 30px;
     }
 }
