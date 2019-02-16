@@ -34,48 +34,76 @@
 		<h1>Contact Us</h1>
 	</header>
 
+<div class="container">
 
+	<div class="contact-form">
+		<h3>Get In Touch</h3>
+		<form>
+			<fieldset>
+				<legend>Email Address</legend>
+				<input type="text" placeholder="Enter email">
+				<p>We'll never share your email with anyone else.</p>
+			</fieldset>
 
-<!-- Contactd Us Content 
-  
-Get In Touch
+			<fieldset>
+				<legend>How many buildings do you need planned?</legend>
+				<select id="number-of-buildings">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</fieldset>
 
-Email Address
-Enter Email
-We'll never share your email with anyone else.
+			<fieldset>
+				<legend>Provide a brief overview of your project needs:</legend>
+				<textarea name="project-overview" id="project-overview" cols="30" rows="10"></textarea>
+			</fieldset>
+			
+			<fieldset>
+				<label for="small-business"><input id="small-business" type="radio">I am a small business</label><br>
+				<label for="residential-owner"><input id="residential-owner" type="radio">I am a residential owner</label><br>
+				<label for="corporation"><input id="corporation" type="radio">I am a corporation</label>
+			</fieldset>
 
-How many buildings do you need planned?
-1-5
+			<button type="submit">Submit</button>
 
-Provide a brief overview of your project needs:
+		</form>
 
-I am a small business
-I am a residential owner
-I am a corporation
+	</div>
 
-Submit
+	<div class="contact-adresses">
 
-Where We Work
+		<h3>Where We Work</h3>
 
-New York
-123 Lane
-Suite 100
-Albany, NY 12345
-202 555 0144
+		<address class="contact-address">
+			<h4 class="contact-address-header">New York</h4>
+			<p>123 Lane<br>
+			Suite 100<br>
+			Albany, NY 12345<br>
+			202 555 0144</p>
+		</address>
 
-Florida
-Ocean Drive
-Suite 201
-Orlando, FL 22345
-502 555 0144
+		<address class="contact-address">
+			<h4 class="contact-address-header">Florida</h4>
+			<p>Ocean Drive<br>
+			Suite 201<br>
+			Orlando, FL 22345<br>
+			502 555 0144</p>
+		</address>
 
-California
-Mountain Street
-Suite 105
-San Diego, CA 22345
-702 555 0144
+		<address class="contact-address">
+			<h4 class="contact-address-header">California</h4>
+			<p>Mountain Street<br>
+			Suite 105<br>
+			San Diego, CA 22345<br>
+			702 555 0144</p>
+		</address>
+		
+	</div>
 
--->
+</div>
 
 <!-- CONTACT -->
 <div class="bottom">
