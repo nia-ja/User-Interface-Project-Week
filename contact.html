@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Contact Us</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">
 	<!--[if IE]>
@@ -27,22 +28,22 @@
 	</nav> <!-- navigation -->
 
 	<!-- HEADER -->
-	<header class="container">
-		<img class="header-img" id="contact-header-img" src="./img/contact/contact-jumbotron.png" alt="Image of futuristic building">
-		<img class="mobile-header-img" id="contact-mobile-header-img" src="./img/contact/contact-mobile-jumbotron.png" alt="Image of futuristic building">
+	<header class="container contact">
+		<img class="contact-header-img" id="contact-header-img" src="./img/contact/contact-jumbotron.png" alt="Image of futuristic building">
+		<img class="contact-mobile-header-img" id="contact-mobile-header-img" src="./img/contact/contact-mobile-jumbotron.png" alt="Image of futuristic building">
 
 		<h1>Contact Us</h1>
 	</header>
 
-<div class="container">
+<div class="contact-main-content container">
 
 	<div class="contact-form">
 		<h3>Get In Touch</h3>
 		<form>
 			<fieldset>
 				<legend>Email Address</legend>
-				<input type="text" placeholder="Enter email">
-				<p>We'll never share your email with anyone else.</p>
+				<input type="text" class="contact-text-input" placeholder="Enter email">
+				<p class="small-text">We'll never share your email with anyone else.</p>
 			</fieldset>
 
 			<fieldset>
@@ -58,22 +59,22 @@
 
 			<fieldset>
 				<legend>Provide a brief overview of your project needs:</legend>
-				<textarea name="project-overview" id="project-overview" cols="30" rows="10"></textarea>
+				<textarea name="project-overview" id="project-overview" cols="30" rows="5"></textarea>
 			</fieldset>
 			
 			<fieldset>
-				<label for="small-business"><input id="small-business" type="radio">I am a small business</label><br>
-				<label for="residential-owner"><input id="residential-owner" type="radio">I am a residential owner</label><br>
-				<label for="corporation"><input id="corporation" type="radio">I am a corporation</label>
+				<label for="small-business"><input id="small-business" class="radio-button" type="radio" name="customer-type" checked="checked"> I am a small business</label><br>
+				<label for="residential-owner"><input id="residential-owner" class="radio-button" type="radio" name="customer-type"> I am a residential owner</label><br>
+				<label for="corporation"><input id="corporation" class="radio-button" type="radio" name="customer-type"> I am a corporation</label>
 			</fieldset>
 
-			<button type="submit">Submit</button>
+			<button type="submit" class="btn">Submit</button>
 
 		</form>
 
 	</div>
 
-	<div class="contact-adresses">
+	<div class="contact-addresses">
 
 		<h3>Where We Work</h3>
 
@@ -107,7 +108,7 @@
 
 <!-- CONTACT -->
 <div class="bottom">
-	<section class="contact container">
+	<section class="contact-bottom container">
 		<form>
 			<h5>Interested in starting a project?</h5>
 			<h5>Let’s talk:</h5>

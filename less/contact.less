@@ -1,0 +1,89 @@
+// HEADER styling
+header.contact {
+    position: relative;
+    .contact-header-img {
+        @media @mobile {
+            display: none;
+        }
+    }
+    .contact-mobile-header-img {
+        display: none;
+        @media @mobile {
+            display: block;
+            width: 100%;
+        }
+    }
+    h1 {
+        position: absolute;
+        bottom: 15px;
+        left: 5%;
+    }
+}
+
+.contact-main-content {
+    width: 100%;
+    margin: 50px auto;
+    padding: 0 5%;
+    .flex(flex-start; flex-start);
+    .contact-form {
+        width: 70%;
+        h3 {
+            margin-bottom: 30px;
+        }
+    }
+    .contact-addresses {
+        width: 30%;
+        h3 {
+            margin-bottom: 45px;
+        }
+        .contact-address {
+            p {
+                margin-bottom: 50px;
+            }
+            &:last-child {
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    
+    h4 {
+        color: @general-color;
+        margin-bottom: 10px;
+    }
+}
+
+form {
+    fieldset {
+        margin-bottom: 30px;
+        legend {
+            margin-bottom: 10px;
+        }
+        .contact-text-input, select, textarea {
+            width: 80%;
+            border-radius: 5px;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            padding: 10px;
+            border: 1px solid darkgray;
+        }
+        select {
+            max-height: calc(2.4em + 10px);
+            height: calc(2.4em + 10px);
+            text-indent: 10px;
+            background-color: white;
+        }
+        p.small-text {
+            font-size: 1.2rem;
+            line-height: 2.6rem;
+        }
+        .radio-button {
+            margin-bottom: 10px;
+        }
+    }
+    .btn {
+        .button();
+        width: 25%;
+    } 
+}

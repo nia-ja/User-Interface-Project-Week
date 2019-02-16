@@ -208,7 +208,7 @@ header .mobile-header-img {
 header h1 {
   position: absolute;
   bottom: 50px;
-  left: 7%;
+  left: 5%;
 }
 @media (max-width: 500px) {
   header h1 {
@@ -223,14 +223,13 @@ header h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 2%;
-  padding: 20px 2%;
+  padding: 40px 5%;
 }
 @media (max-width: 500px) {
   .content,
   .content-reverse {
     margin: 0;
-    padding: 20px 3%;
+    padding: 30px 5% 0 5%;
   }
 }
 .content .content-text,
@@ -334,18 +333,11 @@ header h1 {
 .recent-projects .content-header,
 .recent-projects .column-content,
 .recent-projects .column-content-reverse {
-  margin: 20px 2%;
-  padding: 20px 2%;
-}
-@media (max-width: 500px) {
-  .recent-projects .content-header {
-    margin: 0 2%;
-  }
+  padding: 40px 5%;
 }
 @media (max-width: 500px) {
   .recent-projects .column-content,
   .recent-projects .column-content-reverse {
-    margin: 0;
     padding: 0;
   }
 }
@@ -436,14 +428,14 @@ header.services .mobile-services-header-img {
 }
 header.services h1 {
   position: absolute;
-  bottom: 10px;
-  left: 7%;
+  bottom: 15px;
+  left: 5%;
 }
 .services-top-content p {
-  margin: 5%;
+  padding: 50px 5%;
 }
 .tabs {
-  margin: 0 5%;
+  padding: 0 5%;
 }
 .tabs-links {
   display: flex;
@@ -559,7 +551,7 @@ nav .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 7%;
+  padding: 10px 5%;
 }
 nav .top .hamburger-close {
   display: none;
@@ -614,38 +606,39 @@ nav .menu--open a:hover {
     line-height: 2.6rem;
   }
 }
-.contact {
+.contact-bottom {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding: 50px 5% 30px 5%;
 }
 @media (max-width: 500px) {
-  .contact {
+  .contact-bottom {
     flex-direction: column;
     width: 100%;
     padding: 40px 5% 0 5%;
   }
 }
 @media (max-width: 500px) {
-  .contact form {
+  .contact-bottom form {
     width: 100%;
     margin-bottom: 20px;
   }
 }
-.contact form h5 {
-  margin-bottom: 5px;
-}
-.contact form input {
+.contact-bottom form input {
   width: 100%;
+  font-size: 1.6rem;
   margin-top: 20px;
   margin-bottom: 5px;
   border: none;
   border-radius: 5px;
-  padding: 10px 5px;
+  padding: 10px;
+}
+.contact-bottom .address h5 {
+  margin-bottom: 10px;
 }
 @media (max-width: 500px) {
-  .contact .address {
+  .contact-bottom .address {
     margin-bottom: 15px;
   }
 }
@@ -661,4 +654,111 @@ footer {
 footer p.footer {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+header.contact {
+  position: relative;
+}
+@media (max-width: 500px) {
+  header.contact .contact-header-img {
+    display: none;
+  }
+}
+header.contact .contact-mobile-header-img {
+  display: none;
+}
+@media (max-width: 500px) {
+  header.contact .contact-mobile-header-img {
+    display: block;
+    width: 100%;
+  }
+}
+header.contact h1 {
+  position: absolute;
+  bottom: 15px;
+  left: 5%;
+}
+.contact-main-content {
+  width: 100%;
+  margin: 50px auto;
+  padding: 0 5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.contact-main-content .contact-form {
+  width: 70%;
+}
+.contact-main-content .contact-form h3 {
+  margin-bottom: 30px;
+}
+.contact-main-content .contact-addresses {
+  width: 30%;
+}
+.contact-main-content .contact-addresses h3 {
+  margin-bottom: 45px;
+}
+.contact-main-content .contact-addresses .contact-address p {
+  margin-bottom: 50px;
+}
+.contact-main-content .contact-addresses .contact-address:last-child p {
+  margin-bottom: 0;
+}
+.contact-main-content h4 {
+  color: #222222;
+  margin-bottom: 10px;
+}
+form fieldset {
+  margin-bottom: 30px;
+}
+form fieldset legend {
+  margin-bottom: 10px;
+}
+form fieldset .contact-text-input,
+form fieldset select,
+form fieldset textarea {
+  width: 80%;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding: 10px;
+  border: 1px solid darkgray;
+}
+form fieldset select {
+  max-height: calc(2.4em + 10px);
+  height: calc(2.4em + 10px);
+  text-indent: 10px;
+  background-color: white;
+}
+form fieldset p.small-text {
+  font-size: 1.2rem;
+  line-height: 2.6rem;
+}
+form fieldset .radio-button {
+  margin-bottom: 10px;
+}
+form .btn {
+  width: 30%;
+  min-width: 110px;
+  background-color: #FFFFFF;
+  color: #222222;
+  border: 1px solid #222222;
+  border-radius: none;
+  border-bottom: 2px solid #616161;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 10px 5px;
+  width: 25%;
+}
+form .btn:hover {
+  color: #FFFFFF;
+  background-color: #222222;
+  border: 1px solid #FFFFFF;
+  border-top: 2px solid #616161;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  form .btn {
+    width: 100%;
+    padding: 15px 5px;
+  }
 }
