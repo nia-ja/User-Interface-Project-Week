@@ -687,17 +687,47 @@ header.contact h1 {
   justify-content: flex-start;
   align-items: flex-start;
 }
+@media (max-width: 500px) {
+  .contact-main-content {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .contact-main-content {
+    flex-direction: column;
+  }
+}
 .contact-main-content .contact-form {
   width: 70%;
+}
+@media (max-width: 500px) {
+  .contact-main-content .contact-form {
+    width: 100%;
+  }
 }
 .contact-main-content .contact-form h3 {
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .contact-main-content .contact-form h3 {
+    margin-bottom: 50px;
+  }
+}
 .contact-main-content .contact-addresses {
   width: 30%;
 }
+@media (max-width: 500px) {
+  .contact-main-content .contact-addresses {
+    width: 100%;
+  }
+}
 .contact-main-content .contact-addresses h3 {
   margin-bottom: 45px;
+}
+@media (max-width: 500px) {
+  .contact-main-content .contact-addresses h3 {
+    margin-top: 50px;
+  }
 }
 .contact-main-content .contact-addresses .contact-address p {
   margin-bottom: 50px;
@@ -724,6 +754,13 @@ form fieldset textarea {
   line-height: 2.4rem;
   padding: 10px;
   border: 1px solid darkgray;
+}
+@media (max-width: 500px) {
+  form fieldset .contact-text-input,
+  form fieldset select,
+  form fieldset textarea {
+    width: 100%;
+  }
 }
 form fieldset select {
   max-height: calc(2.4em + 10px);
