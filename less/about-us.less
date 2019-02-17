@@ -71,74 +71,103 @@
             padding-right: 35px;
         }
     }
-    .cards {
-        // width: 100%;
-        // height: 100vh;
-        // z-index: 2;
-        .card {
-            // display: none;
-            width: 50%;
-            margin: 0 25%;
-            border-radius: 10px;
-            h3 {
-                padding: 20px 30px;
-            }
-            h4 {
-                padding: 20px 30px;
-            }
-            p {
-                padding: 20px 30px;
-            }
-        }
-        .alice {
-            border: 1px solid  rgb(66, 146, 210);
-            h3 {
-                color: rgb(66, 146, 210);
-            }
-            h4 {
-                background-color: rgb(66, 146, 210);
-            }
-            p {
-                background-color: rgba(66, 146, 210, 0.5);
-            }
-        }
-        .mike {
-            border: 1px solid rgb(32, 193, 180);
-            h3 {
-                color: rgb(32, 193, 180);
-            }
-            h4 {
-                background-color: rgb(32, 193, 180);
-            }
-            p {
-                background-color: rgba(32, 193, 180,0.5);
+
+
+}
+
+// MODALS
+// styling for the modal viewport
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+// #modal-bela {
+//     display: block;
+// }
+
+// styling for the modal "card"
+.modal-content {
+    width: 50%;
+    margin: 20% auto;
+    border: 1px solid  rgb(0,0,0);
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    .modal-header {
+        .closeBtn {
+            color: rgb(204, 204, 204);
+            float: right;
+            font-size: 3rem;
+            padding-top: 20px;
+            padding-right: 20px;
+            &:hover, &:focus {
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                cursor: pointer;
             }
         }
-        .helen {
-            border: 1px solid rgb(255, 212, 0);
-            h3 {
-                color: rgb(255, 212, 0);
-            }
-            h4 {
-                background-color: rgb(255, 212, 0);
-            }
-            p {
-                background-color: rgba(255, 212, 0, 0.5);
-            }
-        }
-        .bela {
-            border: 1px solid  rgb(253, 125, 135);
-            h3 {
-                color: rgb(253, 125, 135);
-            }
-            h4 {
-                background-color: rgb(253, 125, 135);
-            }
-            p {
-                background-color: rgba(253, 125, 135, 0.5);
-            }
+        h3 {
+            padding: 20px 30px;
+            background-color: rgb(255,255,255);
         }
     }
-
-
+    .modal-body {
+        h4 {
+            padding: 20px 30px;
+        }
+        p {
+            padding: 20px 30px;
+            color: lightgray;
+        }
+    }
+}
+.modal-alice {
+    h3 {
+        color: rgb(66, 146, 210);
+    }
+    h4 {
+        background-color: rgb(66, 146, 210);
+    }
+    p {
+        background-color: rgb(41, 94, 138);
+    }
+}
+.modal-mike {
+    h3 {
+        color: rgb(32, 193, 180);
+    }
+    h4 {
+        background-color: rgb(32, 193, 180);
+    }
+    p {
+        background-color: rgb(16, 105, 98);
+    }
+}
+.modal-helen {
+    h3 {
+        color: rgb(255, 212, 0);
+    }
+    h4 {
+        background-color: rgb(255, 212, 0);
+    }
+    p {
+        background-color: rgb(165, 122, 3);
+    }
+}
+.modal-bela {
+    h3 {
+        color: rgb(253, 125, 135);
+    }
+    h4 {
+        background-color: rgb(253, 125, 135);
+    }
+    p {
+        background-color: rgb(211, 85, 96);
+    }
 }

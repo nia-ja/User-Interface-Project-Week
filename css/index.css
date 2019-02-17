@@ -883,65 +883,80 @@ form .btn:hover {
   transform: rotate(-7deg);
   padding-right: 35px;
 }
-.about-us-main-content .cards .card {
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
   width: 50%;
-  margin: 0 25%;
-  border-radius: 10px;
+  margin: 20% auto;
+  border: 1px solid #000000;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
 }
-.about-us-main-content .cards .card h3 {
+.modal-content .modal-header .closeBtn {
+  color: #cccccc;
+  float: right;
+  font-size: 3rem;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.modal-content .modal-header .closeBtn:hover,
+.modal-content .modal-header .closeBtn:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-content .modal-header h3 {
+  padding: 20px 30px;
+  background-color: #ffffff;
+}
+.modal-content .modal-body h4 {
   padding: 20px 30px;
 }
-.about-us-main-content .cards .card h4 {
+.modal-content .modal-body p {
   padding: 20px 30px;
+  color: lightgray;
 }
-.about-us-main-content .cards .card p {
-  padding: 20px 30px;
-}
-.about-us-main-content .cards .alice {
-  border: 1px solid #4292d2;
-}
-.about-us-main-content .cards .alice h3 {
+.modal-alice h3 {
   color: #4292d2;
 }
-.about-us-main-content .cards .alice h4 {
+.modal-alice h4 {
   background-color: #4292d2;
 }
-.about-us-main-content .cards .alice p {
-  background-color: rgba(66, 146, 210, 0.5);
+.modal-alice p {
+  background-color: #295e8a;
 }
-.about-us-main-content .cards .mike {
-  border: 1px solid #20c1b4;
-}
-.about-us-main-content .cards .mike h3 {
+.modal-mike h3 {
   color: #20c1b4;
 }
-.about-us-main-content .cards .mike h4 {
+.modal-mike h4 {
   background-color: #20c1b4;
 }
-.about-us-main-content .cards .mike p {
-  background-color: rgba(32, 193, 180, 0.5);
+.modal-mike p {
+  background-color: #106962;
 }
-.about-us-main-content .cards .helen {
-  border: 1px solid #ffd400;
-}
-.about-us-main-content .cards .helen h3 {
+.modal-helen h3 {
   color: #ffd400;
 }
-.about-us-main-content .cards .helen h4 {
+.modal-helen h4 {
   background-color: #ffd400;
 }
-.about-us-main-content .cards .helen p {
-  background-color: rgba(255, 212, 0, 0.5);
+.modal-helen p {
+  background-color: #a57a03;
 }
-.about-us-main-content .cards .bela {
-  border: 1px solid #fd7d87;
-}
-.about-us-main-content .cards .bela h3 {
+.modal-bela h3 {
   color: #fd7d87;
 }
-.about-us-main-content .cards .bela h4 {
+.modal-bela h4 {
   background-color: #fd7d87;
 }
-.about-us-main-content .cards .bela p {
-  background-color: rgba(253, 125, 135, 0.5);
+.modal-bela p {
+  background-color: #d35560;
 }
