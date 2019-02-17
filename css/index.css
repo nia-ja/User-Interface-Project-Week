@@ -856,26 +856,32 @@ form .btn:hover {
   color: rgba(255, 255, 255, 0.9);
   font-size: 3rem;
   text-transform: uppercase;
+  cursor: pointer;
+  padding: 30px;
 }
 .about-us-main-content .our-team #alice {
-  top: 220px;
-  left: 19.5%;
+  top: 190px;
+  left: 16.5%;
   transform: rotate(2deg);
+  padding-right: 40px;
 }
 .about-us-main-content .our-team #mike {
-  top: 220px;
-  left: 38.3%;
+  top: 190px;
+  left: 35.3%;
   transform: rotate(2deg);
+  padding-right: 45px;
 }
 .about-us-main-content .our-team #helen {
-  top: 197px;
-  left: 57.5%;
+  top: 167px;
+  left: 54.5%;
   transform: rotate(13deg);
+  padding-right: 35px;
 }
 .about-us-main-content .our-team #bela {
-  top: 217px;
-  left: 75.6%;
+  top: 187px;
+  left: 72.6%;
   transform: rotate(-7deg);
+  padding-right: 35px;
 }
 .about-us-main-content .cards .card {
   display: none;
