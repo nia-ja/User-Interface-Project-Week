@@ -1,0 +1,21 @@
+// HEADER styling
+.about-us {
+    position: relative;
+    .about-us-header-img {
+        @media @mobile {
+            display: none;
+        }
+    }
+    .about-us-mobile-header-img {
+        display: none;
+        @media @mobile {
+            display: block;
+            width: 100%;
+        }
+    }
+    h1 {
+        position: absolute;
+        bottom: 15px;
+        left: 5%;
+    }
+}

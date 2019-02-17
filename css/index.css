@@ -555,6 +555,12 @@ nav .top {
   align-items: center;
   padding: 10px 5%;
 }
+nav .top h4 a {
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #FFFFFF;
+  line-height: 2.4rem;
+}
 nav .top .hamburger-close {
   display: none;
 }
@@ -805,4 +811,26 @@ form .btn:hover {
     width: 100%;
     padding: 15px 5px;
   }
+}
+.about-us {
+  position: relative;
+}
+@media (max-width: 500px) {
+  .about-us .about-us-header-img {
+    display: none;
+  }
+}
+.about-us .about-us-mobile-header-img {
+  display: none;
+}
+@media (max-width: 500px) {
+  .about-us .about-us-mobile-header-img {
+    display: block;
+    width: 100%;
+  }
+}
+.about-us h1 {
+  position: absolute;
+  bottom: 15px;
+  left: 5%;
 }
