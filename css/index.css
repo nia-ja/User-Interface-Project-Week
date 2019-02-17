@@ -884,21 +884,64 @@ form .btn:hover {
   padding-right: 35px;
 }
 .about-us-main-content .cards .card {
-  display: none;
   width: 50%;
   margin: 0 25%;
-  border: 1px solid #64bebe;
   border-radius: 10px;
 }
 .about-us-main-content .cards .card h3 {
-  color: #3b7070;
   padding: 20px 30px;
 }
 .about-us-main-content .cards .card h4 {
-  background-color: #64bebe;
   padding: 20px 30px;
 }
 .about-us-main-content .cards .card p {
-  background-color: rgba(100, 190, 190, 0.4);
   padding: 20px 30px;
+}
+.about-us-main-content .cards .alice {
+  border: 1px solid #4292d2;
+}
+.about-us-main-content .cards .alice h3 {
+  color: #4292d2;
+}
+.about-us-main-content .cards .alice h4 {
+  background-color: #4292d2;
+}
+.about-us-main-content .cards .alice p {
+  background-color: rgba(66, 146, 210, 0.5);
+}
+.about-us-main-content .cards .mike {
+  border: 1px solid #20c1b4;
+}
+.about-us-main-content .cards .mike h3 {
+  color: #20c1b4;
+}
+.about-us-main-content .cards .mike h4 {
+  background-color: #20c1b4;
+}
+.about-us-main-content .cards .mike p {
+  background-color: rgba(32, 193, 180, 0.5);
+}
+.about-us-main-content .cards .helen {
+  border: 1px solid #ffd400;
+}
+.about-us-main-content .cards .helen h3 {
+  color: #ffd400;
+}
+.about-us-main-content .cards .helen h4 {
+  background-color: #ffd400;
+}
+.about-us-main-content .cards .helen p {
+  background-color: rgba(255, 212, 0, 0.5);
+}
+.about-us-main-content .cards .bela {
+  border: 1px solid #fd7d87;
+}
+.about-us-main-content .cards .bela h3 {
+  color: #fd7d87;
+}
+.about-us-main-content .cards .bela h4 {
+  background-color: #fd7d87;
+}
+.about-us-main-content .cards .bela p {
+  background-color: rgba(253, 125, 135, 0.5);
 }
