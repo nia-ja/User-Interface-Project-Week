@@ -442,6 +442,7 @@ header.services h1 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .tabs-links {
@@ -546,6 +547,7 @@ nav {
   position: fixed;
   z-index: 1;
   width: 100%;
+  cursor: pointer;
 }
 nav .top {
   display: flex;
@@ -728,13 +730,18 @@ form fieldset select {
   height: calc(2.4em + 10px);
   text-indent: 10px;
   background-color: white;
+  cursor: pointer;
 }
 form fieldset p.small-text {
   font-size: 1.2rem;
   line-height: 2.6rem;
 }
-form fieldset .radio-button {
+form .radio-buttons label {
+  cursor: pointer;
+}
+form .radio-buttons input {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 form .btn {
   width: 30%;
