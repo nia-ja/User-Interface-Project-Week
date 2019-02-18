@@ -7,7 +7,6 @@ class TagName {
         this.modalItem = new ModalItem(this.modalItem);
         this.tagName.addEventListener('click', this.openModal.bind(this));
     };
-
     openModal() {
         this.modalItem.openModal();
     }

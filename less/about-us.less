@@ -89,10 +89,6 @@
     background-color: rgba(0,0,0,0.5);
 }
 
-// #modal-bela {
-//     display: block;
-// }
-
 // styling for the modal "card"
 .modal-content {
     width: 50%;
@@ -171,3 +167,62 @@
         background-color: rgb(211, 85, 96);
     }
 }
+
+
+// Carousel styling
+.carousel {
+    width: 100%;
+    .flex(center, center);
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 16px;
+    margin-bottom: 40px;
+    @media(min-width: 1200px){
+      width: 1200px;
+    }
+    .left-button, .right-button {
+      .flex(center);
+      color: white;
+      background-color: black;
+      font-size: 40px;
+      border-radius: 50%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      &:hover {
+        color: black;
+        background-color: lightgray;
+        border: 2px solid black;
+      }
+    }
+    .left-button {
+      top: 50%; 
+      left: 25px;
+      transform: translate(0, -50%);
+    }
+    .right-button {
+      top: 50%; 
+      right: 25px;
+      transform: translate(0, -50%);
+    }
+    .carousel-city {
+      width: 80%;
+      height: 500px;
+      border: 1px solid lightblue;
+      background-color: lightblue;
+      display: none;
+      position: relative;
+      .carousel-content {
+          position: absolute;
+          top: 5%;
+          right: 5%;
+          z-index: 4;
+          border: 1px solid black;
+          padding: 10px;
+          background-color: aquamarine;
+      }
+
+    }
+  }
