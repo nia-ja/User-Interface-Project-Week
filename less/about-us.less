@@ -118,6 +118,7 @@
     margin: 20% auto;
     border: 1px solid  rgb(0,0,0);
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    animation: modalopen 2s;
     .modal-header {
         .closeBtn {
             color: rgb(204, 204, 204);
@@ -146,6 +147,12 @@
         }
     }
 }
+
+@keyframes modalopen {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 .modal-alice {
     h3 {
         color: rgb(66, 146, 210);
@@ -190,7 +197,6 @@
         background-color: rgb(211, 85, 96);
     }
 }
-
 
 
 //MINE-TEST
