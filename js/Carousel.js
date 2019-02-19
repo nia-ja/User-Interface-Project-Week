@@ -70,4 +70,4 @@ let carousel = document.querySelector('.carousel')
 carousel = new Carousel(carousel);
 
 // images are changing automatically, when user is not clicking (9000ms == 9s)
-setInterval(carousel.showNextBlock.bind(carousel), 9000);
+// setInterval(carousel.showNextBlock.bind(carousel), 9000);

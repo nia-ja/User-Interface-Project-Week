@@ -20,67 +20,90 @@
     }
 }
 
-.about-us-main-content {
-    .start {
-        padding: 30px 5%;
-        p:first-child {
-            margin-bottom: 20px;
-        }
-    }
-    h3 {
-        padding: 20px 5%;
-    }
-    .our-team {
-        position: relative;
-        margin-bottom: 30px;
-        img {
-            width: 80%;
-            margin: 0 10%;
-        }
-        h4 {
-            position: absolute;
-            color: rgba(255, 255, 255,.9);
-            font-size: 3rem;
-            text-transform: uppercase;
-            cursor: pointer;
-            padding: 30px;
-            // border: 1px solid red;
-        }
-        #alice {
-            top: 190px;
-            left: 16.5%;
-            transform: rotate(2deg);
-            padding-right: 40px;
-        }
-        #mike {
-            top: 190px;
-            left: 35.3%;
-            transform: rotate(2deg);
-            padding-right: 45px;
-        }
-        #helen {
-            top: 167px;
-            left: 54.5%;
-            transform: rotate(13deg);
-            padding-right: 35px;
-        }
-        #bela {
-            top: 187px;
-            left: 72.6%;
-            transform: rotate(-7deg);
-            padding-right: 35px;
-        }
-    }
 
-
+.start {
+    padding: 30px 5%;
+    margin-bottom: 80px;
+    .flex;
+    flex-wrap: wrap;
+    p:first-child {
+        width: 100%;
+        margin-bottom: 35px;
+        margin-top: 35px;
+        font-weight: bold;
+        font-size: 1.9rem;
+    }
+    p:nth-child(2) {
+        width: 45%;
+        margin-right: 10%;
+    }
+    p:nth-child(3) {
+        width: 45%;
+    }
 }
+
+
+.our-team {
+    position: relative;
+    margin-bottom: 60px;
+    h3 {
+        position: absolute;
+        color: @general-color;
+        text-transform: uppercase;
+        background-color: #D8D8D8;
+        width: 30%;
+        top: -4rem;
+        right: 35%;
+        text-align: center;
+        height: 8rem;
+        padding: 2.6rem 0;
+    }
+    img {
+        width: 80%;
+        margin: 0 10%;
+    }
+    h4 {
+        position: absolute;
+        color: rgba(255, 255, 255,.9);
+        font-size: 3rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 30px;
+        // border: 1px solid red;
+    }
+    #alice {
+        top: 272px;
+        left: 18.5%;
+        transform: rotate(2deg);
+        padding-right: 40px;
+    }
+    #mike {
+        top: 272px;
+        left: 37.3%;
+        transform: rotate(2deg);
+        padding-right: 45px;
+    }
+    #helen {
+        top: 244px;
+        left: 57%;
+        transform: rotate(13deg);
+        padding-right: 35px;
+    }
+    #bela {
+        top: 265px;
+        left: 74.3%;
+        transform: rotate(-7deg);
+        padding-right: 35px;
+    }
+}
+
 
 // MODALS
 // styling for the modal viewport
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 10000;
     left: 0;
     top: 0;
     height: 100%;
@@ -169,6 +192,66 @@
 }
 
 
+
+//MINE-TEST
+.testimonials {
+    width: 100%;
+    margin: 0 auto 60px auto;
+    padding: 0 10%;
+    background-color: rgba(216, 216, 216, 0.3);
+    position: relative;
+    .flex(space-between; baseline);
+    h3 {
+        position: absolute;
+        width: 30%;
+        height: 8rem;
+        top: -4rem;
+        right: 35%;
+        text-align: center;
+        padding: 2.6rem 0;
+        text-transform: uppercase;
+        background-color: #D8D8D8;
+        z-index: 2;
+    }
+    div {
+        padding: 80px 5% 20px 5%;
+        p {
+            margin-bottom: 20px;
+            font-style: italic;
+
+        }
+        .testimonials-name {
+            float: right;
+            font-size: 1.4rem;
+            font-weight: bold;
+            font-style: normal;
+        }
+    }
+}
+
+
+
+
+// Locations container and header
+.locations {
+    position: relative;
+    margin-bottom: 80px;
+    h3 {
+        position: absolute;
+        color: @general-color;
+        text-transform: uppercase;
+        background-color: #D8D8D8;
+        width: 30%;
+        bottom: -4rem;
+        right: 35%;
+        text-align: center;
+        height: 8rem;
+        padding: 2.6rem 0;
+        z-index: 2;
+    }
+}
+
+
 // Carousel styling
 .carousel {
     width: 100%;
@@ -210,19 +293,25 @@
     .carousel-city {
       width: 80%;
       height: 500px;
-      border: 1px solid lightblue;
-      background-color: lightblue;
       display: none;
       position: relative;
       .carousel-content {
           position: absolute;
-          top: 5%;
-          right: 5%;
+          top: 30%;
+          right: 0;
           z-index: 4;
-          border: 1px solid black;
-          padding: 10px;
-          background-color: aquamarine;
+          border-radius: 5px 0 0 5px;
+          padding: 20px;
+          background-color: rgba(255, 255, 255, 0.85);
+          height: 40%;
+          h4 {
+              color: #4987fa;
+              margin-bottom: 15px;
+          }
+          p {
+              color: #505050;
+              font-weight: bold;
+          }
       }
-
     }
   }
