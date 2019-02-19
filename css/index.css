@@ -836,7 +836,7 @@ form .btn:hover {
 }
 .start {
   padding: 30px 5%;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -858,7 +858,7 @@ form .btn:hover {
 }
 .our-team {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 .our-team h3 {
   position: absolute;
@@ -873,8 +873,8 @@ form .btn:hover {
   padding: 2.6rem 0;
 }
 .our-team img {
-  width: 80%;
-  margin: 0 10%;
+  width: 72%;
+  margin: 0 14%;
 }
 .our-team h4 {
   position: absolute;
@@ -885,26 +885,26 @@ form .btn:hover {
   padding: 30px;
 }
 .our-team #alice {
-  top: 272px;
-  left: 18.5%;
+  top: 245px;
+  left: 21%;
   transform: rotate(2deg);
   padding-right: 40px;
 }
 .our-team #mike {
-  top: 272px;
-  left: 37.3%;
+  top: 245px;
+  left: 38%;
   transform: rotate(2deg);
   padding-right: 45px;
 }
 .our-team #helen {
-  top: 244px;
-  left: 57%;
+  top: 215px;
+  left: 55.7%;
   transform: rotate(13deg);
   padding-right: 35px;
 }
 .our-team #bela {
-  top: 265px;
-  left: 74.3%;
+  top: 230px;
+  left: 71.5%;
   transform: rotate(-7deg);
   padding-right: 35px;
 }
@@ -949,14 +949,6 @@ form .btn:hover {
 .modal-content .modal-body p {
   padding: 20px 30px;
   color: lightgray;
-}
-@keyframes modalopen {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 .modal-alice h3 {
   color: #4292d2;
@@ -1130,6 +1122,37 @@ form .btn:hover {
 .carousel .carousel-city .carousel-content p {
   color: #505050;
   font-weight: bold;
+}
+.twitter {
+  width: 100%;
+  margin: 0 auto 60px auto;
+  padding: 30px 20%;
+  background-color: rgba(216, 216, 216, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.twitter .twitter-timeline {
+  width: 45%;
+}
+.twitter .twitter-timeline:first-child {
+  margin-right: 10%;
+}
+.twitter #twitter-widget-0,
+.twitter #twitter-widget-1 {
+  min-height: 520px !important;
+  height: 100%;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /* FROM LEFT TO RIGHT */
 @keyframes animateLeft {

@@ -23,7 +23,7 @@
 
 .start {
     padding: 30px 5%;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     .flex;
     flex-wrap: wrap;
     p:first-child {
@@ -45,7 +45,7 @@
 
 .our-team {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     h3 {
         position: absolute;
         color: @general-color;
@@ -59,8 +59,8 @@
         padding: 2.6rem 0;
     }
     img {
-        width: 80%;
-        margin: 0 10%;
+        width: 72%;
+        margin: 0 14%;
     }
     h4 {
         position: absolute;
@@ -72,26 +72,26 @@
         // border: 1px solid red;
     }
     #alice {
-        top: 272px;
-        left: 18.5%;
+        top: 245px;
+        left: 21%;
         transform: rotate(2deg);
         padding-right: 40px;
     }
     #mike {
-        top: 272px;
-        left: 37.3%;
+        top: 245px;
+        left: 38%;
         transform: rotate(2deg);
         padding-right: 45px;
     }
     #helen {
-        top: 244px;
-        left: 57%;
+        top: 215px;
+        left: 55.7%;
         transform: rotate(13deg);
         padding-right: 35px;
     }
     #bela {
-        top: 265px;
-        left: 74.3%;
+        top: 230px;
+        left: 71.5%;
         transform: rotate(-7deg);
         padding-right: 35px;
     }
@@ -146,11 +146,6 @@
             color: lightgray;
         }
     }
-}
-
-@keyframes modalopen {
-    from {opacity: 0;}
-    to {opacity: 1;}
 }
 
 .modal-alice {
@@ -316,34 +311,61 @@
       transform: translate(0, -50%);
     }
     .carousel-city {
-      width: 80%;
-      height: 500px;
-      display: none;
-      position: relative;
-      .carousel-content {
-          position: absolute;
-          top: 30%;
-          right: 0;
-          z-index: 4;
-          border-radius: 5px 0 0 5px;
-          padding: 20px;
-          background-color: rgba(255, 255, 255, 0.85);
-          height: 40%;
-          animation: sticky 1.5s;
-          h4 {
-              color: #4987fa;
-              margin-bottom: 15px;
-          }
-          p {
-              color: #505050;
-              font-weight: bold;
-          }
-      }
+        width: 80%;
+        height: 500px;
+        display: none;
+        position: relative;
+        .carousel-content {
+            position: absolute;
+            top: 30%;
+            right: 0;
+            z-index: 4;
+            border-radius: 5px 0 0 5px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.85);
+            height: 40%;
+            animation: sticky 1.5s;
+            h4 {
+                color: #4987fa;
+                margin-bottom: 15px;
+            }
+            p {
+                color: #505050;
+                font-weight: bold;
+            }
+        }
     }
-  }
+}
+
+.twitter {
+    width: 100%;
+    margin: 0 auto 60px auto;
+    padding: 30px 20%;
+    background-color: rgba(216, 216, 216, 0.3);
+    .flex(space-between; flex-start);
+    .twitter-timeline {
+        width: 45%;
+        &:first-child {
+            margin-right: 10%;
+        }
+    }
+    #twitter-widget-0, #twitter-widget-1 {
+        min-height: 520px !important;
+        height: 100%;
+        background-color: white;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+}
 
 
 // ======= ANIMATIONS ==================
+
+// Animation for modal content card
+@keyframes modalopen {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 
 // Animations for slides (carousel, pressing right/left arrows)
 /* FROM LEFT TO RIGHT */

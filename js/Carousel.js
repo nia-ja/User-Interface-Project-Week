@@ -31,14 +31,9 @@ class Carousel {
         if (this.blockIndex < 0) {
             // grab last card from NodeList
             this.blockIndex = this.blocks.length - 1;
-            this.blocks[this.blockIndex].classList.toggle('animate-left');
-            //display last card
-            this.blocks[this.blockIndex].style.display = 'block';
-        } else {
-            this.blocks[this.blockIndex].classList.toggle('animate-left');
-            //display card with currant index
-            this.blocks[this.blockIndex].style.display = 'block';
         }
+        this.blocks[this.blockIndex].classList.toggle('animate-left');
+        this.blocks[this.blockIndex].style.display = 'block';
         const dataTab = this.blocks[this.blockIndex].dataset.tab;
         const currentTab = document.querySelector(`.tabs-link[data-tab="${dataTab}"]`);
         currentTab.classList.toggle('tabs-link-selected');
@@ -59,14 +54,9 @@ class Carousel {
         if (this.blockIndex > (this.blocks.length - 1)) {
             // grab first card from NodeList
             this.blockIndex = 0;
-            this.blocks[this.blockIndex].classList.toggle('animate-left');
-            //display first card
-            this.blocks[this.blockIndex].style.display = 'block';
-        } else {
-            this.blocks[this.blockIndex].classList.toggle('animate-left');
-            //display card with currant index
-            this.blocks[this.blockIndex].style.display = 'block';
         }
+        this.blocks[this.blockIndex].classList.toggle('animate-left');
+        this.blocks[this.blockIndex].style.display = 'block';
         const dataTab = this.blocks[this.blockIndex].dataset.tab;
         const currentTab = document.querySelector(`.tabs-link[data-tab="${dataTab}"]`);
         currentTab.classList.toggle('tabs-link-selected');
@@ -74,7 +64,7 @@ class Carousel {
 }
 
 // reference to the carousel
-let carousel = document.querySelector('.carousel')
+let carousel = document.querySelector('.carousel');
 // creating new instance of Carousel class
 carousel = new Carousel(carousel);
 
