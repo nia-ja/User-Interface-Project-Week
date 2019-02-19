@@ -21,6 +21,7 @@ class ModalItem {
         this.closeBtn = this.modalItem.querySelector('.closeBtn');
         console.log(this.closeBtn);
         this.closeBtn.addEventListener('click', this.closeModal.bind(this));
+        window.addEventListener('click', this.closeModalOutside.bind(this));
     }
     openModal() {
         this.modalItem.style.display = "block";
@@ -28,6 +29,11 @@ class ModalItem {
     }
     closeModal() {
         this.modalItem.style.display = "none";
+    }
+    closeModalOutside(e) {
+        if(e.target == this.modalItem) {
+            this.modalItem.style.display = "none";
+        }
     }
 }
 
