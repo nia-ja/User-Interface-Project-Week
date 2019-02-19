@@ -22,8 +22,8 @@ class Carousel {
         // set all cards as invisible
         this.blocks.forEach(block => {
             block.style.display = 'none';
-            // block.classList.remove('animate-left');
-            // block.classList.remove('animate-right');
+            block.classList.remove('animate-left');
+            block.classList.remove('development');
         });
         // substruct 1 from index
         this.blockIndex -= 1;
@@ -31,17 +31,13 @@ class Carousel {
         if (this.blockIndex < 0) {
             // grab last card from NodeList
             this.blockIndex = this.blocks.length - 1;
-            // this.blocks[this.blockIndex].classList.toggle('animate-left');
+            this.blocks[this.blockIndex].classList.toggle('animate-left');
             //display last card
             this.blocks[this.blockIndex].style.display = 'block';
-        //     const currentTab = document.querySelector(`.tabs-link[data-tab="${this.dataTab}"]`);
-        // currentTab.classList.toggle('tabs-link-selected');
         } else {
-            // this.blocks[this.blockIndex].classList.toggle('animate-left');
+            this.blocks[this.blockIndex].classList.toggle('animate-left');
             //display card with currant index
             this.blocks[this.blockIndex].style.display = 'block';
-            // const currentTab = document.querySelector(`.tabs-link[data-tab="${this.dataTab}"]`);
-            // currentTab.classList.toggle('tabs-link-selected');
         }
         const dataTab = this.blocks[this.blockIndex].dataset.tab;
         const currentTab = document.querySelector(`.tabs-link[data-tab="${dataTab}"]`);
@@ -54,8 +50,8 @@ class Carousel {
         // set all cards as invisible
         this.blocks.forEach(block => {
             block.style.display = 'none';
-            // block.classList.remove('animate-left');
-            // block.classList.remove('animate-right');
+            block.classList.remove('animate-left');
+            block.classList.remove('development');
         });
         //adds 1 to index
         this.blockIndex += 1;
@@ -63,17 +59,13 @@ class Carousel {
         if (this.blockIndex > (this.blocks.length - 1)) {
             // grab first card from NodeList
             this.blockIndex = 0;
-            // this.blocks[this.blockIndex].classList.toggle('animate-right');
+            this.blocks[this.blockIndex].classList.toggle('animate-left');
             //display first card
             this.blocks[this.blockIndex].style.display = 'block';
-            // const currentTab = document.querySelector(`.tabs-link[data-tab="${this.dataTab}"]`);
-            // currentTab.classList.toggle('tabs-link-selected');
         } else {
-            // this.blocks[this.blockIndex].classList.toggle('animate-right');
+            this.blocks[this.blockIndex].classList.toggle('animate-left');
             //display card with currant index
             this.blocks[this.blockIndex].style.display = 'block';
-            // const currentTab = document.querySelector(`.tabs-link[data-tab="${this.dataTab}"]`);
-            // currentTab.classList.toggle('tabs-link-selected');
         }
         const dataTab = this.blocks[this.blockIndex].dataset.tab;
         const currentTab = document.querySelector(`.tabs-link[data-tab="${dataTab}"]`);
@@ -124,6 +116,9 @@ class CarouselItem {
         const carouselItems = document.querySelectorAll('.carousel-city');
         carouselItems.forEach(item => (item.style.display = 'none'));
         this.carouselItem.style.display = "block";
+        this.carouselItem.classList.remove('development');
+        // this.carouselItem.classList.remove('animate-right');
+        this.carouselItem.classList.toggle('development');
     }
 }
 

@@ -1082,8 +1082,8 @@ form .btn:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   font-size: 40px;
   border-radius: 50%;
   position: absolute;
@@ -1094,7 +1094,6 @@ form .btn:hover {
 .carousel .left-button:hover,
 .carousel .right-button:hover {
   color: black;
-  background-color: lightgray;
   border: 2px solid black;
 }
 .carousel .left-button {
@@ -1122,6 +1121,7 @@ form .btn:hover {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.85);
   height: 40%;
+  animation: sticky 1.5s;
 }
 .carousel .carousel-city .carousel-content h4 {
   color: #4987fa;
@@ -1130,4 +1130,55 @@ form .btn:hover {
 .carousel .carousel-city .carousel-content p {
   color: #505050;
   font-weight: bold;
+}
+/* FROM LEFT TO RIGHT */
+@keyframes animateLeft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+.animate-left {
+  position: relative;
+  animation: animateLeft 1s;
+  z-index: 1;
+}
+@keyframes development {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.development {
+  animation: development 3s;
+}
+/* FROM RIGHT TO LEFT */
+@keyframes sticky {
+  0% {
+    left: 0;
+  }
+  86% {
+    left: 0;
+  }
+  90% {
+    right: 0;
+  }
+  93% {
+    right: -7px;
+  }
+  96% {
+    right: 0;
+  }
+  98% {
+    right: -5px;
+  }
+  100% {
+    right: 0;
+  }
 }
