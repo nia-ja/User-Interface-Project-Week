@@ -5,11 +5,11 @@ class Carousel {
         this.leftBtn = this.carousel.querySelector('.left-button');
         // reference to the right button
         this.rightBtn = this.carousel.querySelector('.right-button');
-        // reference to all images
+        // reference to all cards
         this.blocks = this.carousel.querySelectorAll('.carousel-city');
-        // set index to first slide
+        // set index to first card
         this.blockIndex = 0;
-        //display first image in NodeList
+        //display first card in NodeList
         this.blocks[this.blockIndex].style.display = 'block';
         // click events for buttons
         this.leftBtn.addEventListener('click', this.showPreviousBlock.bind(this));
@@ -17,7 +17,9 @@ class Carousel {
     }
 
     showPreviousBlock() {
-        // set all images as invisible
+        const wordControls = document.querySelectorAll('.tabs-link');
+        wordControls.forEach(control => control.classList.remove("tabs-link-selected"));
+        // set all cards as invisible
         this.blocks.forEach(block => {
             block.style.display = 'none';
             // block.classList.remove('animate-left');
@@ -27,20 +29,29 @@ class Carousel {
         this.blockIndex -= 1;
         //if index is negative
         if (this.blockIndex < 0) {
-            // grab last image from NodeList
+            // grab last card from NodeList
             this.blockIndex = this.blocks.length - 1;
             // this.blocks[this.blockIndex].classList.toggle('animate-left');
-            //display last image
+            //display last card
             this.blocks[this.blockIndex].style.display = 'block';
+        //     const currentTab = document.querySelector(`.tabs-link[data-tab="${this.dataTab}"]`);
+        // currentTab.classList.toggle('tabs-link-selected');
         } else {
             // this.blocks[this.blockIndex].classList.toggle('animate-left');
-            //display image with currant index
+            //display card with currant index
             this.blocks[this.blockIndex].style.display = 'block';
+            // const currentTab = document.querySelector(`.tabs-link[data-tab="${this.dataTab}"]`);
+            // currentTab.classList.toggle('tabs-link-selected');
         }
+        const dataTab = this.blocks[this.blockIndex].dataset.tab;
+        const currentTab = document.querySelector(`.tabs-link[data-tab="${dataTab}"]`);
+        currentTab.classList.toggle('tabs-link-selected');
     }
 
     showNextBlock() {
-        // set all images as invisible
+        const wordControls = document.querySelectorAll('.tabs-link');
+        wordControls.forEach(control => control.classList.remove("tabs-link-selected"));
+        // set all cards as invisible
         this.blocks.forEach(block => {
             block.style.display = 'none';
             // block.classList.remove('animate-left');
@@ -48,26 +59,73 @@ class Carousel {
         });
         //adds 1 to index
         this.blockIndex += 1;
-        // if index is bigger then length of immage NodeList
+        // if index is bigger then length of blocks NodeList
         if (this.blockIndex > (this.blocks.length - 1)) {
-            // grab first image from NodeList
+            // grab first card from NodeList
             this.blockIndex = 0;
             // this.blocks[this.blockIndex].classList.toggle('animate-right');
-            //display first image
+            //display first card
             this.blocks[this.blockIndex].style.display = 'block';
+            // const currentTab = document.querySelector(`.tabs-link[data-tab="${this.dataTab}"]`);
+            // currentTab.classList.toggle('tabs-link-selected');
         } else {
             // this.blocks[this.blockIndex].classList.toggle('animate-right');
-            //display image with currant index
+            //display card with currant index
             this.blocks[this.blockIndex].style.display = 'block';
+            // const currentTab = document.querySelector(`.tabs-link[data-tab="${this.dataTab}"]`);
+            // currentTab.classList.toggle('tabs-link-selected');
         }
+        const dataTab = this.blocks[this.blockIndex].dataset.tab;
+        const currentTab = document.querySelector(`.tabs-link[data-tab="${dataTab}"]`);
+        currentTab.classList.toggle('tabs-link-selected');
     }
 }
-
 
 // reference to the carousel
 let carousel = document.querySelector('.carousel')
 // creating new instance of Carousel class
 carousel = new Carousel(carousel);
 
-// images are changing automatically, when user is not clicking (9000ms == 9s)
-// setInterval(carousel.showNextBlock.bind(carousel), 9000);
+
+
+
+
+
+// NAME controls
+class WordControl {
+    constructor(wordControl) {
+        // setting up a reference to our DOM node
+        this.wordControl = wordControl;
+        // set up a reference to our custom data attribute
+        this.data = this.wordControl.dataset.tab;
+        // Using the custom data attribute get the associated Item element
+        this.carouselItem = document.querySelector(`.carousel-city[data-tab="${this.data}"]`);
+        // Using the Item element, create a new instance of the CarouselItem class
+        this.carouselItem = new CarouselItem(this.carouselItem);
+        // added a click event listener to our dot. That calls the method dotClick
+        this.wordControl.addEventListener('click', this.wordClick.bind(this));
+    }
+    wordClick() {
+        const wordControls = document.querySelectorAll('.tabs-link');
+        wordControls.forEach(wordControl => wordControl.classList.remove('tabs-link-selected'));
+        this.wordControl.classList.toggle('tabs-link-selected');
+        this.carouselItem.select();
+    }
+}
+
+class CarouselItem {
+    constructor(carouselItem) {
+      // Assign this.element to the passed in element
+      this.carouselItem = carouselItem;
+    //   console.log(this.element);
+    }
+  
+    select() {
+        const carouselItems = document.querySelectorAll('.carousel-city');
+        carouselItems.forEach(item => (item.style.display = 'none'));
+        this.carouselItem.style.display = "block";
+    }
+}
+
+const wordControls = document.querySelectorAll('.tabs-link')
+                    .forEach(wordControl => new WordControl(wordControl));

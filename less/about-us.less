@@ -258,6 +258,28 @@
 }
 
 
+// Location tabs styling
+.location-tabs {
+    .tabs-links {
+        padding: 0 4%;
+        justify-content: flex-start;
+        margin-bottom: 0;
+        .tabs-link {
+            // margin-right: 2px;
+            border-bottom: none;
+            &:nth-child(2), &:nth-child(3) {
+                border-left: none;
+            }
+        }
+        .tabs-link-selected {
+            background-color: #D8D8D8;
+            color: @general-color;
+        }
+    }
+    
+}
+
+
 // Carousel styling
 .carousel {
     width: 100%;
@@ -265,7 +287,7 @@
     height: 500px;
     position: relative;
     overflow: hidden;
-    margin-top: 16px;
+    // margin-top: 5px;
     margin-bottom: 40px;
     @media(min-width: 1200px){
       width: 1200px;
