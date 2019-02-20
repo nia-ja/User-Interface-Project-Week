@@ -575,6 +575,8 @@ nav .menu {
   align-items: flex-start;
   flex-direction: column;
   display: none;
+  background-color: #98A2AE;
+  height: 100vh;
 }
 nav .menu--open {
   display: flex;
@@ -586,6 +588,7 @@ nav .menu--open {
 nav .menu--open a {
   min-width: 195px;
   margin: 0 auto;
+  display: absolute;
 }
 nav .menu--open a:hover {
   color: #222222;
