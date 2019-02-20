@@ -575,7 +575,7 @@ nav .menu {
   align-items: flex-start;
   flex-direction: column;
   display: none;
-  background-color: #98A2AE;
+  background-color: #98a2ae;
   height: 100vh;
 }
 nav .menu--open {
