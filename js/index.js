@@ -1,7 +1,7 @@
 //NAVIGATION
 // GreenSock animation for navigation onload
 window.onload = function(){
-    TweenMax.from(nav, 2, {y:-30, ease: Back.easeOut.config(2)});
+    TweenMax.from(nav, 2, {y:-30, ease: Power4.easeOut});
 }
 
 const openMenu = () => {
@@ -18,7 +18,7 @@ const openMenu = () => {
 
 const closeMenu = () => {
     // GreenSock animation for the menu close
-    TweenMax.to(nav, 0.5, {backgroundColor:"rgba(152, 162, 174,0.1)", y:-50, ease: SlowMo.ease.config(0.5, 0.7, true)});
+    TweenMax.to(nav, 1, {backgroundColor:"rgba(152, 162, 174,0.1)", y:-50, ease: SlowMo.ease.config(0.1, 0.7, true)});
     menu.classList.remove('menu--open');
     menuButton.classList.remove('hamburger-close');
     menuButtonClose.classList.toggle('hamburger-close');
