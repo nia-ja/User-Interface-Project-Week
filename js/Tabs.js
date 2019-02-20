@@ -58,6 +58,7 @@ class TabLink {
       // Add a class named "tabs-item-selected" to this element
       this.element.classList.toggle('tabs-item-selected');
     //   console.log(this.element);
+      TweenMax.from(".tabs-item-selected", 2, {opacity:0, scale:0,y:-200, zIndex:-9, ease: Power4.easeOut});
     }
   }
   
