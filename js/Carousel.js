@@ -97,9 +97,8 @@ class WordControl {
 
 class CarouselItem {
     constructor(carouselItem) {
-      // Assign this.element to the passed in element
-      this.carouselItem = carouselItem;
-    //   console.log(this.element);
+        // Assign this.element to the passed in element
+        this.carouselItem = carouselItem;     
     }
   
     select() {
@@ -113,4 +112,4 @@ class CarouselItem {
 }
 
 const wordControls = document.querySelectorAll('.tabs-link')
-                    .forEach(wordControl => new WordControl(wordControl));
+                    .forEach(wordControl => new WordControl(wordControl)); 

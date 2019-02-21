@@ -1120,7 +1120,7 @@ form .btn:hover {
   position: absolute;
   color: #222222;
   text-transform: uppercase;
-  background-color: #D8D8D8;
+  background-color: #d8d8d8;
   width: 30%;
   bottom: -4rem;
   right: 35%;
@@ -1136,10 +1136,22 @@ form .btn:hover {
     bottom: -7rem;
   }
 }
+@media (max-width: 500px) {
+  .location-tabs {
+    padding: 0;
+  }
+}
 .location-tabs .tabs-links {
   padding: 0 4%;
   justify-content: flex-start;
   margin-bottom: 0;
+}
+@media (max-width: 500px) {
+  .location-tabs .tabs-links {
+    flex-direction: row;
+    padding: 0;
+    margin-bottom: 0;
+  }
 }
 .location-tabs .tabs-links .tabs-link {
   border-bottom: none;
@@ -1149,14 +1161,9 @@ form .btn:hover {
   border-left: none;
 }
 @media (max-width: 500px) {
-  .location-tabs .tabs-links .tabs-link:nth-child(2),
-  .location-tabs .tabs-links .tabs-link:nth-child(3) {
-    border: 1px solid #222222;
-  }
-}
-@media (max-width: 500px) {
   .location-tabs .tabs-links .tabs-link {
-    border: 1px solid #222222;
+    margin: 0;
+    flex: 1;
   }
 }
 .location-tabs .tabs-links .tabs-link-selected {
@@ -1197,21 +1204,57 @@ form .btn:hover {
   color: black;
   border: 2px solid black;
 }
+@media (max-width: 500px) {
+  .carousel .left-button:hover,
+  .carousel .right-button:hover {
+    border: none;
+    background-color: rgba(216, 216, 216, 0.5);
+    z-index: 99;
+  }
+}
+@media (max-width: 500px) {
+  .carousel .left-button,
+  .carousel .right-button {
+    position: absolute;
+    width: 25px;
+    height: 100%;
+    font-size: 20px;
+    border-radius: 0;
+    background-color: transparent;
+  }
+}
 .carousel .left-button {
   top: 50%;
   left: 25px;
   transform: translate(0, -50%);
+}
+@media (max-width: 500px) {
+  .carousel .left-button {
+    left: 0;
+    z-index: 3;
+  }
 }
 .carousel .right-button {
   top: 50%;
   right: 25px;
   transform: translate(0, -50%);
 }
+@media (max-width: 500px) {
+  .carousel .right-button {
+    right: 0;
+    z-index: 3;
+  }
+}
 .carousel .carousel-city {
   width: 80%;
   height: 500px;
   display: none;
   position: relative;
+}
+@media (max-width: 500px) {
+  .carousel .carousel-city {
+    width: 100%;
+  }
 }
 .carousel .carousel-city .carousel-content {
   position: absolute;
@@ -1224,13 +1267,32 @@ form .btn:hover {
   height: 40%;
   animation: sticky 1.5s;
 }
+@media (max-width: 500px) {
+  .carousel .carousel-city .carousel-content {
+    padding: 5px 10px;
+    top: 2%;
+    height: 18.3%;
+  }
+}
 .carousel .carousel-city .carousel-content h4 {
   color: #4987fa;
   margin-bottom: 15px;
 }
+@media (max-width: 500px) {
+  .carousel .carousel-city .carousel-content h4 {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+  }
+}
 .carousel .carousel-city .carousel-content p {
   color: #505050;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .carousel .carousel-city .carousel-content p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
 }
 .twitter {
   width: 100%;

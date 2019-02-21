@@ -298,7 +298,7 @@
         position: absolute;
         color: @general-color;
         text-transform: uppercase;
-        background-color: #D8D8D8;
+        background-color: rgb(216, 216, 216);
         width: 30%;
         bottom: -4rem;
         right: 35%;
@@ -317,20 +317,29 @@
 
 // Location tabs styling
 .location-tabs {
+    @media @mobile {
+        padding: 0;
+    }
     .tabs-links {
         padding: 0 4%;
         justify-content: flex-start;
         margin-bottom: 0;
+        @media @mobile {
+            flex-direction: row;
+            padding: 0;
+            margin-bottom: 0;
+        }
         .tabs-link {
             border-bottom: none;
             &:nth-child(2), &:nth-child(3) {
                 border-left: none;
-                @media @mobile {
-                    border: 1px solid rgb(34, 34, 34);
-                }
+                // @media @mobile {
+                //     border: 1px solid rgb(34, 34, 34);
+                // }
             }
             @media @mobile {
-                border: 1px solid rgb(34, 34, 34);
+                margin: 0;
+                flex: 1;
             }
         }
         .tabs-link-selected {
@@ -366,23 +375,47 @@
       &:hover {
         color: black;
         border: 2px solid black;
+        @media @mobile {
+            border: none;
+            background-color: rgba(216, 216, 216, 0.5);
+            z-index: 99;
+        }
+      }
+      @media @mobile {
+          position: absolute;
+          width: 25px;
+          height: 100%;
+          font-size: 20px;
+          border-radius: 0;
+          background-color: transparent;
       }
     }
     .left-button {
       top: 50%; 
       left: 25px;
       transform: translate(0, -50%);
+      @media @mobile {
+        left: 0;
+        z-index: 3;
+    }
     }
     .right-button {
       top: 50%; 
       right: 25px;
       transform: translate(0, -50%);
+      @media @mobile {
+          right: 0;
+          z-index: 3;
+      }
     }
     .carousel-city {
         width: 80%;
         height: 500px;
         display: none;
         position: relative;
+        @media @mobile {
+            width: 100%;
+        }
         .carousel-content {
             position: absolute;
             top: 30%;
@@ -393,13 +426,26 @@
             background-color: rgba(255, 255, 255, 0.85);
             height: 40%;
             animation: sticky 1.5s;
+            @media @mobile {
+                padding: 5px 10px;
+                top: 2%;
+                height: 18.3%;
+            }
             h4 {
                 color: #4987fa;
                 margin-bottom: 15px;
+                @media @mobile {
+                    margin-bottom: 10px;
+                    font-size: 1.6rem;
+                }
             }
             p {
                 color: #505050;
                 font-weight: bold;
+                @media @mobile {
+                    font-size: 1.2rem;
+                    line-height: 1.4rem;
+                }
             }
         }
     }
