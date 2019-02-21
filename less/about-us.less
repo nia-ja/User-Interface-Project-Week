@@ -26,6 +26,9 @@
     margin-bottom: 70px;
     .flex;
     flex-wrap: wrap;
+    @media @mobile {
+        margin-bottom: 110px;
+    }
     p:first-child {
         width: 100%;
         margin-bottom: 35px;
@@ -36,9 +39,17 @@
     p:nth-child(2) {
         width: 45%;
         margin-right: 10%;
+        @media @mobile {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 35px;
+        }
     }
     p:nth-child(3) {
         width: 45%;
+        @media @mobile {
+            width: 100%;
+        }
     }
 }
 
@@ -46,6 +57,9 @@
 .our-team {
     position: relative;
     margin-bottom: 100px;
+    @media @mobile {
+        margin-bottom: 140px;
+    }
     h3 {
         position: absolute;
         color: @general-color;
@@ -57,10 +71,19 @@
         text-align: center;
         height: 8rem;
         padding: 2.6rem 0;
+        @media @mobile {
+            width: 90%;
+            right: 5%;
+            top: -7rem;
+        }
     }
     img {
         width: 72%;
         margin: 0 14%;
+        @media @mobile {
+            width: 100%;
+            margin: 0 0 0 0;
+        }
     }
     h4 {
         position: absolute;
@@ -69,31 +92,49 @@
         text-transform: uppercase;
         cursor: pointer;
         padding: 30px;
-        // border: 1px solid red;
+        @media @mobile {
+            font-size: 1.6rem;
+        }
     }
     #alice {
         top: 245px;
         left: 21%;
         transform: rotate(2deg);
         padding-right: 40px;
+        @media @mobile {
+            top: 120px;
+            left: 7%;
+        }
     }
     #mike {
         top: 245px;
         left: 38%;
         transform: rotate(2deg);
         padding-right: 45px;
+        @media @mobile {
+            top: 120px;
+            left: 30.5%;
+        }
     }
     #helen {
         top: 215px;
         left: 55.7%;
         transform: rotate(13deg);
         padding-right: 35px;
+        @media @mobile {
+            top: 103px;
+            left: 55.1%;
+        }
     }
     #bela {
         top: 230px;
         left: 71.5%;
         transform: rotate(-7deg);
         padding-right: 35px;
+        @media @mobile {
+            top: 113px;
+            left: 76.7%;
+        }
     }
 }
 
@@ -119,6 +160,9 @@
     border: 1px solid  rgb(0,0,0);
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
     animation: modalopen 2s;
+    @media @mobile {
+        width: 90%;
+    }
     .modal-header {
         .closeBtn {
             color: rgb(204, 204, 204);
@@ -202,6 +246,10 @@
     background-color: rgba(216, 216, 216, 0.3);
     position: relative;
     .flex(space-between; baseline);
+    @media @mobile {
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
     h3 {
         position: absolute;
         width: 30%;
@@ -213,9 +261,18 @@
         text-transform: uppercase;
         background-color: #D8D8D8;
         z-index: 2;
+        @media @mobile {
+            width: 90%;
+            right: 5%;
+            top: -7rem;
+        }
     }
     div {
         padding: 80px 5% 20px 5%;
+        @media @mobile {
+            width: 100%;
+            padding-top: 40px;
+        }
         p {
             margin-bottom: 20px;
             font-style: italic;
@@ -249,6 +306,11 @@
         height: 8rem;
         padding: 2.6rem 0;
         z-index: 2;
+        @media @mobile {
+            width: 90%;
+            right: 5%;
+            bottom: -7rem;
+        }
     }
 }
 
@@ -263,6 +325,12 @@
             border-bottom: none;
             &:nth-child(2), &:nth-child(3) {
                 border-left: none;
+                @media @mobile {
+                    border: 1px solid rgb(34, 34, 34);
+                }
+            }
+            @media @mobile {
+                border: 1px solid rgb(34, 34, 34);
             }
         }
         .tabs-link-selected {
@@ -452,26 +520,26 @@ animation: development 3s;
 // Animation for carousel content blocks
 /* FROM RIGHT TO LEFT */
 @keyframes sticky {
-0% {
-    left: 0;
-}
-86% {
-    left: 0;
-}
-90% {
-    right: 0;
-}
-93% {
-    right: -7px;
-}
-96% {
-    right: 0;
+    0% {
+        left: 0;
+    }
+    86% {
+        left: 0;
+    }
+    90% {
+        right: 0;
+    }
+    93% {
+        right: -7px;
+    }
+    96% {
+        right: 0;
 
-}
-98% {
-    right: -5px;
-}
-100% {
-    right: 0;
-}
+    }
+    98% {
+        right: -5px;
+    }
+    100% {
+        right: 0;
+    }
 }

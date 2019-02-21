@@ -845,6 +845,11 @@ form .btn:hover {
   align-items: center;
   flex-wrap: wrap;
 }
+@media (max-width: 500px) {
+  .start {
+    margin-bottom: 110px;
+  }
+}
 .start p:first-child {
   width: 100%;
   margin-bottom: 35px;
@@ -856,12 +861,29 @@ form .btn:hover {
   width: 45%;
   margin-right: 10%;
 }
+@media (max-width: 500px) {
+  .start p:nth-child(2) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+}
 .start p:nth-child(3) {
   width: 45%;
+}
+@media (max-width: 500px) {
+  .start p:nth-child(3) {
+    width: 100%;
+  }
 }
 .our-team {
   position: relative;
   margin-bottom: 100px;
+}
+@media (max-width: 500px) {
+  .our-team {
+    margin-bottom: 140px;
+  }
 }
 .our-team h3 {
   position: absolute;
@@ -875,9 +897,22 @@ form .btn:hover {
   height: 8rem;
   padding: 2.6rem 0;
 }
+@media (max-width: 500px) {
+  .our-team h3 {
+    width: 90%;
+    right: 5%;
+    top: -7rem;
+  }
+}
 .our-team img {
   width: 72%;
   margin: 0 14%;
+}
+@media (max-width: 500px) {
+  .our-team img {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
 }
 .our-team h4 {
   position: absolute;
@@ -887,11 +922,22 @@ form .btn:hover {
   cursor: pointer;
   padding: 30px;
 }
+@media (max-width: 500px) {
+  .our-team h4 {
+    font-size: 1.6rem;
+  }
+}
 .our-team #alice {
   top: 245px;
   left: 21%;
   transform: rotate(2deg);
   padding-right: 40px;
+}
+@media (max-width: 500px) {
+  .our-team #alice {
+    top: 120px;
+    left: 7%;
+  }
 }
 .our-team #mike {
   top: 245px;
@@ -899,17 +945,35 @@ form .btn:hover {
   transform: rotate(2deg);
   padding-right: 45px;
 }
+@media (max-width: 500px) {
+  .our-team #mike {
+    top: 120px;
+    left: 30.5%;
+  }
+}
 .our-team #helen {
   top: 215px;
   left: 55.7%;
   transform: rotate(13deg);
   padding-right: 35px;
 }
+@media (max-width: 500px) {
+  .our-team #helen {
+    top: 103px;
+    left: 55.1%;
+  }
+}
 .our-team #bela {
   top: 230px;
   left: 71.5%;
   transform: rotate(-7deg);
   padding-right: 35px;
+}
+@media (max-width: 500px) {
+  .our-team #bela {
+    top: 113px;
+    left: 76.7%;
+  }
 }
 .modal {
   display: none;
@@ -928,6 +992,11 @@ form .btn:hover {
   border: 1px solid #000000;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   animation: modalopen 2s;
+}
+@media (max-width: 500px) {
+  .modal-content {
+    width: 90%;
+  }
 }
 .modal-content .modal-header .closeBtn {
   color: #cccccc;
@@ -999,6 +1068,12 @@ form .btn:hover {
   justify-content: space-between;
   align-items: baseline;
 }
+@media (max-width: 500px) {
+  .testimonials {
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+}
 .testimonials h3 {
   position: absolute;
   width: 30%;
@@ -1011,8 +1086,21 @@ form .btn:hover {
   background-color: #D8D8D8;
   z-index: 2;
 }
+@media (max-width: 500px) {
+  .testimonials h3 {
+    width: 90%;
+    right: 5%;
+    top: -7rem;
+  }
+}
 .testimonials div {
   padding: 80px 5% 20px 5%;
+}
+@media (max-width: 500px) {
+  .testimonials div {
+    width: 100%;
+    padding-top: 40px;
+  }
 }
 .testimonials div p {
   margin-bottom: 20px;
@@ -1041,6 +1129,13 @@ form .btn:hover {
   padding: 2.6rem 0;
   z-index: 2;
 }
+@media (max-width: 500px) {
+  .locations h3 {
+    width: 90%;
+    right: 5%;
+    bottom: -7rem;
+  }
+}
 .location-tabs .tabs-links {
   padding: 0 4%;
   justify-content: flex-start;
@@ -1052,6 +1147,17 @@ form .btn:hover {
 .location-tabs .tabs-links .tabs-link:nth-child(2),
 .location-tabs .tabs-links .tabs-link:nth-child(3) {
   border-left: none;
+}
+@media (max-width: 500px) {
+  .location-tabs .tabs-links .tabs-link:nth-child(2),
+  .location-tabs .tabs-links .tabs-link:nth-child(3) {
+    border: 1px solid #222222;
+  }
+}
+@media (max-width: 500px) {
+  .location-tabs .tabs-links .tabs-link {
+    border: 1px solid #222222;
+  }
 }
 .location-tabs .tabs-links .tabs-link-selected {
   background-color: #D8D8D8;
