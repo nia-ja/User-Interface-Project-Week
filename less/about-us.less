@@ -132,8 +132,8 @@
         transform: rotate(-7deg);
         padding-right: 35px;
         @media @mobile {
-            top: 113px;
-            left: 76.7%;
+            top: 111px;
+            left: 76.9%;
         }
     }
 }
@@ -412,10 +412,20 @@
     background-color: rgba(216, 216, 216, 0.3);
     .flex(space-between; flex-start);
     margin-bottom: 100px;
+    @media @mobile {
+        flex-wrap: wrap;
+        padding: 30px;
+    }
     .twitter-timeline {
         width: 45%;
+        @media @mobile {
+            width: 100%;
+        }
         &:first-child {
             margin-right: 10%;
+            @media @mobile {
+                margin-right: 0;
+            }
         }
     }
     #twitter-widget-0, #twitter-widget-1 {
@@ -424,6 +434,17 @@
         background-color: white;
         border-radius: 5px;
         overflow: hidden;
+        @media @mobile {
+            min-height: 0px !important;
+        }
+    }
+    .clear {
+        display: none;
+        @media @mobile {
+            display: block;
+            height: 30px;
+            width: 100%;
+        }
     }
 }
 
@@ -441,10 +462,19 @@
         text-align: center;
         height: 8rem;
         padding: 2.6rem 0;
+        @media @mobile {
+            width: 90%;
+            right: 5%;
+            top: -7rem;
+        }
     }
     .partners-background {
         width: 64%;
         margin: 0 18%;
+        @media @mobile {
+            width: 100%;
+            margin: 0;
+        }
     }
     .partners-logo {
         width: 10%;
@@ -456,21 +486,38 @@
     }
     .apple {
         padding: 15px;
+        @media @mobile {
+            width: 20%;
+            right: 5%;
+        }
     }
     .amazon {
         width: 20%;
         right: 40%;
         padding: 15px;
+        @media @mobile {
+            width: 36%;
+            right: 32%;
+        }
     }
     .lambda {
         right: 20%;
         top: 5%;
         width: 14%;
         padding: 10px;
+        @media @mobile {
+            width: 20%;
+            right: 5%;
+            top: 8%;
+        }
     }
     .target {
         left: 20%;
         padding: 10px;
+        @media @mobile {
+            width: 20%;
+            left: 5%;
+        }
     }
 }
 

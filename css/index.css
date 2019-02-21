@@ -971,8 +971,8 @@ form .btn:hover {
 }
 @media (max-width: 500px) {
   .our-team #bela {
-    top: 113px;
-    left: 76.7%;
+    top: 111px;
+    left: 76.9%;
   }
 }
 .modal {
@@ -1242,11 +1242,27 @@ form .btn:hover {
   align-items: flex-start;
   margin-bottom: 100px;
 }
+@media (max-width: 500px) {
+  .twitter {
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+}
 .twitter .twitter-timeline {
   width: 45%;
 }
+@media (max-width: 500px) {
+  .twitter .twitter-timeline {
+    width: 100%;
+  }
+}
 .twitter .twitter-timeline:first-child {
   margin-right: 10%;
+}
+@media (max-width: 500px) {
+  .twitter .twitter-timeline:first-child {
+    margin-right: 0;
+  }
 }
 .twitter #twitter-widget-0,
 .twitter #twitter-widget-1 {
@@ -1255,6 +1271,22 @@ form .btn:hover {
   background-color: white;
   border-radius: 5px;
   overflow: hidden;
+}
+@media (max-width: 500px) {
+  .twitter #twitter-widget-0,
+  .twitter #twitter-widget-1 {
+    min-height: 0px !important;
+  }
+}
+.twitter .clear {
+  display: none;
+}
+@media (max-width: 500px) {
+  .twitter .clear {
+    display: block;
+    height: 30px;
+    width: 100%;
+  }
 }
 .partners {
   position: relative;
@@ -1272,9 +1304,22 @@ form .btn:hover {
   height: 8rem;
   padding: 2.6rem 0;
 }
+@media (max-width: 500px) {
+  .partners h3 {
+    width: 90%;
+    right: 5%;
+    top: -7rem;
+  }
+}
 .partners .partners-background {
   width: 64%;
   margin: 0 18%;
+}
+@media (max-width: 500px) {
+  .partners .partners-background {
+    width: 100%;
+    margin: 0;
+  }
 }
 .partners .partners-logo {
   width: 10%;
@@ -1287,10 +1332,22 @@ form .btn:hover {
 .partners .apple {
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .partners .apple {
+    width: 20%;
+    right: 5%;
+  }
+}
 .partners .amazon {
   width: 20%;
   right: 40%;
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .partners .amazon {
+    width: 36%;
+    right: 32%;
+  }
 }
 .partners .lambda {
   right: 20%;
@@ -1298,9 +1355,22 @@ form .btn:hover {
   width: 14%;
   padding: 10px;
 }
+@media (max-width: 500px) {
+  .partners .lambda {
+    width: 20%;
+    right: 5%;
+    top: 8%;
+  }
+}
 .partners .target {
   left: 20%;
   padding: 10px;
+}
+@media (max-width: 500px) {
+  .partners .target {
+    width: 20%;
+    left: 5%;
+  }
 }
 @keyframes modalopen {
   from {
