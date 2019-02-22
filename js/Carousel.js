@@ -69,10 +69,6 @@ let carousel = document.querySelector('.carousel');
 carousel = new Carousel(carousel);
 
 
-
-
-
-
 // NAME controls
 class WordControl {
     constructor(wordControl) {
@@ -106,7 +102,6 @@ class CarouselItem {
         carouselItems.forEach(item => (item.style.display = 'none'));
         this.carouselItem.style.display = "block";
         this.carouselItem.classList.remove('development');
-        // this.carouselItem.classList.remove('animate-right');
         this.carouselItem.classList.toggle('development');
     }
 }

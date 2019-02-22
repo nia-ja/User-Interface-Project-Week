@@ -20,7 +20,7 @@
     }
 }
 
-
+// START section
 .start {
     padding: 30px 5%;
     margin-bottom: 70px;
@@ -51,15 +51,17 @@
             width: 100%;
         }
     }
-}
+} //<---- start section
 
 
+// OUR TEAM section
 .our-team {
     position: relative;
     margin-bottom: 100px;
     @media @mobile {
         margin-bottom: 140px;
     }
+    // subheader
     h3 {
         position: absolute;
         color: @general-color;
@@ -88,6 +90,7 @@
             margin: 0 0 0 0;
         }
     }
+    // NAME TAGS
     h4 {
         width: 12%;
         position: absolute;
@@ -137,15 +140,12 @@
         top: 39%;
         left: 60.5%;
         transform: rotate(13deg);
-        // @media @mobile {
-        //     left: 59.7%;
-        // }
     }
     #bela {
         top: 42%;
         left: 81%;
         transform: rotate(-7deg);
-    }
+    } // <---- name tags
 }
 
 
@@ -201,7 +201,7 @@
         }
     }
 }
-
+// individual styling for modal "cards"
 .modal-alice {
     h3 {
         color: rgb(66, 146, 210);
@@ -248,7 +248,7 @@
 }
 
 
-//TESTIMONIALS
+//TESTIMONIALS section
 .testimonials {
     width: 100%;
     margin: 0 auto 60px auto;
@@ -263,6 +263,7 @@
         flex-wrap: wrap;
         padding-top: 20px;
     }
+    // Subheader
     h3 {
         position: absolute;
         width: 30%;
@@ -305,15 +306,14 @@
     }
 }
 
-
-
-
+// CAROUSEL
 // Locations container and header
 .locations {
     position: relative;
     margin-bottom: 100px;
     padding: 0;
     margin: 0 auto;
+    // Subheader
     h3 {
         position: absolute;
         color: @general-color;
@@ -338,7 +338,6 @@
         }
     }
 }
-
 
 // Location tabs styling
 .location-tabs {
@@ -378,7 +377,6 @@
     
 }
 
-
 // Carousel styling
 .carousel {
     width: 100%;
@@ -390,6 +388,7 @@
     @media(min-width: 1200px){
       width: 1200px;
     }
+    // Buttons
     .left-button, .right-button {
       .flex(center);
       color: black;
@@ -438,7 +437,7 @@
           right: 0;
           z-index: 3;
       }
-    }
+    } // <---- buttons
     .carousel-city {
         width: 80%;
         height: 500px;
@@ -447,6 +446,7 @@
         @media @tablet1 {
             width: 100%;
         }
+        // Added content card (address)
         .carousel-content {
             position: absolute;
             top: 30%;
@@ -480,10 +480,11 @@
                     line-height: 1.4rem;
                 }
             }
-        }
+        } // <---- Added content card
     }
 }
 
+// TWITTER FEED
 .twitter {
     width: 100%;
     margin: 0 auto 60px auto;
@@ -512,6 +513,7 @@
             }
         }
     }
+    // Elements created dynamically from Twitter side
     #twitter-widget-0, #twitter-widget-1 {
         min-height: 600px !important;
         height: 100%;
@@ -522,6 +524,7 @@
             min-height: 0px !important;
         }
     }
+    // to add margin between two tweets in tablet view
     .clear {
         display: none;
         @media @tablet2 {
@@ -532,9 +535,11 @@
     }
 }
 
+// PARTNERS SECTION
 .partners {
     position: relative;
     margin-bottom: 60px;
+    // Subheader
     h3 {
         position: absolute;
         color: @general-color;
@@ -557,6 +562,7 @@
             top: -7rem;
         }
     }
+    // Background image
     .partners-background {
         width: 64%;
         margin: 0 18%;
@@ -571,10 +577,10 @@
         border-radius: 5px;
         position: absolute;
         bottom: 5%;
-        right: 20%;
     }
     .apple {
         padding: 15px;
+        right: 20%;
         @media @tablet1 {
             width: 20%;
             right: 5%;
@@ -609,8 +615,6 @@
         }
     }
 }
-
-
 
 
 // ======= ANIMATIONS ==================

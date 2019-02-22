@@ -21,16 +21,14 @@ nav {
         }
     }
     .menu {
-        .flex(space-between, flex-start);
-        flex-direction: column;
         display: none;
-        background-color: rgb(152, 162, 174);
-        height: 100vh;
     }
     .menu--open {
         .flex(center; flex-start);
+        flex-direction: column;
         width: 100%;
         height: 100vh;
+        background-color: rgb(152, 162, 174);
         a {
             min-width: 195px;
             margin: 0 auto;

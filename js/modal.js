@@ -1,4 +1,4 @@
-// // Modal component
+// Modal component
 class TagName {
     constructor(tagName) {
         this.tagName = tagName;
@@ -19,7 +19,6 @@ class ModalItem {
     constructor(modalItem) {
         this.modalItem = modalItem;
         this.closeBtn = this.modalItem.querySelector('.closeBtn');
-        // console.log(this.closeBtn);
         this.closeBtn.addEventListener('click', this.closeModal.bind(this));
         window.addEventListener('click', this.closeModalOutside.bind(this));
     }

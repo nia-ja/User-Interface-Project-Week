@@ -30,4 +30,7 @@ const menuButtonClose = document.querySelector('.hamburger-close');
 const nav = document.querySelector('nav');
 
 menuButton.addEventListener('click', openMenu);
-menuButtonClose.addEventListener('click', closeMenu); // <-- navigation.js
+menuButtonClose.addEventListener('click', closeMenu);
+
+// If you need to close menu with outside click -> uncomment next line of code
+// menu.addEventListener('click', closeMenu); // <-- navigation.js

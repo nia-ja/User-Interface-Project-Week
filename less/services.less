@@ -23,16 +23,15 @@ header.services {
 // TOP CONTENT styling
 .services-top-content {
     p {
-        // margin: 5%;
         padding: 50px 5%;
     }
 }
 
 // TAB COMPONENT styling
-
 .tabs {
     padding: 0 5%;
 }
+// TABS LINKS
 .tabs-links {
     .flex;
     margin-bottom: 40px;
@@ -48,9 +47,6 @@ header.services {
         text-align: center;
         font-weight: bold;
         font-size: 1.9rem;
-        // @media @tablet1 {
-        //     width: 24%;
-        // }
         @media @tablet1 {
             width: 80%;
             margin: 10px auto;
@@ -64,17 +60,15 @@ header.services {
         background-color: #5E9EB8;
     }
 }
-
+// TABS ITEMS
 .tabs-items {
     margin-bottom: 80px;    @media @mobile {
         margin-bottom: 50px;
     }
 }
-
 .tabs-item {
     display: none;
 }
-
 .tabs-item-selected {
     .flex;
     flex-wrap: wrap;
@@ -97,6 +91,19 @@ header.services {
         @media @tablet1 {
             width: 100%;
         }
+        .tabs-item-content {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            &:first-child {
+                margin-bottom: 40px;
+                @media @tablet1 {
+                    margin-bottom: 30px;
+                }
+            }
+            @media @tablet1 {
+                margin-bottom: 30px;
+            }
+        }
     }
     .tab-item-image {
         display: block;
@@ -114,19 +121,5 @@ header.services {
             display: block;
             width: 100%;
         }
-    }
-}
-    
-.tabs-item-content {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    &:first-child {
-        margin-bottom: 40px;
-        @media @tablet1 {
-            margin-bottom: 30px;
-        }
-    }
-    @media @tablet1 {
-        margin-bottom: 30px;
     }
 }
