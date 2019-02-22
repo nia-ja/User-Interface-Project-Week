@@ -37,7 +37,7 @@ header.services {
     .flex;
     margin-bottom: 40px;
     cursor: pointer;
-    @media @mobile {
+    @media @tablet1 {
         flex-direction: column;
         margin-bottom: 30px;
     }
@@ -47,10 +47,16 @@ header.services {
         padding: 15px 2px;
         text-align: center;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 1.9rem;
+        // @media @tablet1 {
+        //     width: 24%;
+        // }
+        @media @tablet1 {
+            width: 80%;
+            margin: 10px auto;
+        }
         @media @mobile {
             width: 100%;
-            margin: 10px auto;
         }
     }
     .tabs-link-selected {
@@ -86,13 +92,18 @@ header.services {
         }
     }
     .tab-item-text {
-        margin-right: 20px;
-        width: 50%; 
-        @media @mobile {
+        margin-right: 4%;
+        width: 48%;
+        @media @tablet1 {
             width: 100%;
         }
     }
     .tab-item-image {
+        display: block;
+        width: 48%;
+        @media @tablet1 {
+            width: 100%;
+        }
         @media @mobile {
             display: none;
         }
@@ -111,11 +122,11 @@ header.services {
     line-height: 2.4rem;
     &:first-child {
         margin-bottom: 40px;
-        @media @mobile {
+        @media @tablet1 {
             margin-bottom: 30px;
         }
     }
-    @media @mobile {
+    @media @tablet1 {
         margin-bottom: 30px;
     }
 }

@@ -444,7 +444,7 @@ header.services h1 {
   margin-bottom: 40px;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .tabs-links {
     flex-direction: column;
     margin-bottom: 30px;
@@ -456,12 +456,17 @@ header.services h1 {
   padding: 15px 2px;
   text-align: center;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.9rem;
+}
+@media (max-width: 750px) {
+  .tabs-links .tabs-link {
+    width: 80%;
+    margin: 10px auto;
+  }
 }
 @media (max-width: 500px) {
   .tabs-links .tabs-link {
     width: 100%;
-    margin: 10px auto;
   }
 }
 .tabs-links .tabs-link-selected {
@@ -503,11 +508,20 @@ header.services h1 {
   }
 }
 .tabs-item-selected .tab-item-text {
-  margin-right: 20px;
-  width: 50%;
+  margin-right: 4%;
+  width: 48%;
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .tabs-item-selected .tab-item-text {
+    width: 100%;
+  }
+}
+.tabs-item-selected .tab-item-image {
+  display: block;
+  width: 48%;
+}
+@media (max-width: 750px) {
+  .tabs-item-selected .tab-item-image {
     width: 100%;
   }
 }
@@ -532,12 +546,12 @@ header.services h1 {
 .tabs-item-content:first-child {
   margin-bottom: 40px;
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .tabs-item-content:first-child {
     margin-bottom: 30px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .tabs-item-content {
     margin-bottom: 30px;
   }
@@ -623,14 +637,14 @@ nav .menu--open a:hover {
   align-items: baseline;
   padding: 50px 5% 30px 5%;
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .contact-bottom {
     flex-direction: column;
     width: 100%;
     padding: 40px 5% 0 5%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .contact-bottom form {
     width: 100%;
     margin-bottom: 20px;
@@ -648,7 +662,7 @@ nav .menu--open a:hover {
 .contact-bottom .address h5 {
   margin-bottom: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .contact-bottom .address {
     margin-bottom: 15px;
   }
@@ -656,7 +670,7 @@ nav .menu--open a:hover {
 footer {
   text-align: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   footer {
     text-align: left;
     padding-left: 3%;
@@ -699,10 +713,6 @@ header.contact h1 {
 @media (max-width: 500px) {
   .contact-main-content {
     margin-bottom: 30px;
-  }
-}
-@media (max-width: 500px) {
-  .contact-main-content {
     flex-direction: column;
   }
 }
@@ -724,10 +734,12 @@ header.contact h1 {
 }
 .contact-main-content .contact-addresses {
   width: 30%;
+  padding-left: 3%;
 }
 @media (max-width: 500px) {
   .contact-main-content .contact-addresses {
     width: 100%;
+    padding-left: 0;
   }
 }
 .contact-main-content .contact-addresses h3 {
@@ -757,7 +769,7 @@ form fieldset legend {
 form fieldset .contact-text-input,
 form fieldset select,
 form fieldset textarea {
-  width: 80%;
+  width: 95%;
   border-radius: 5px;
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -818,7 +830,7 @@ form .btn:hover {
 .about-us {
   position: relative;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .about-us .about-us-header-img {
     display: none;
   }
@@ -826,7 +838,7 @@ form .btn:hover {
 .about-us .about-us-mobile-header-img {
   display: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .about-us .about-us-mobile-header-img {
     display: block;
     width: 100%;
@@ -897,16 +909,19 @@ form .btn:hover {
   height: 8rem;
   padding: 2.6rem 0;
 }
+@media (max-width: 750px) {
+  .our-team h3 {
+    width: 70%;
+    right: 15%;
+    top: -5rem;
+  }
+}
 @media (max-width: 500px) {
   .our-team h3 {
     width: 90%;
     right: 5%;
     top: -7rem;
   }
-}
-.our-team img {
-  width: 72%;
-  margin: 0 14%;
 }
 @media (max-width: 500px) {
   .our-team img {
@@ -915,65 +930,73 @@ form .btn:hover {
   }
 }
 .our-team h4 {
+  width: 12%;
   position: absolute;
   color: rgba(255, 255, 255, 0.9);
-  font-size: 3rem;
+  font-size: 2.5rem;
+  text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  padding: 30px;
+  padding: 2%;
+  text-shadow: 1px 2px 1px rgba(211, 211, 211, 0.7);
+}
+@media (max-width: 750px) {
+  .our-team h4 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .our-team h4 {
+    font-size: 1.9rem;
+  }
 }
 @media (max-width: 500px) {
   .our-team h4 {
     font-size: 1.6rem;
   }
 }
+.our-team h4:hover {
+  font-size: 3rem;
+}
+@media (max-width: 750px) {
+  .our-team h4:hover {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .our-team h4:hover {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .our-team h4:hover {
+    font-size: 1.7rem;
+  }
+}
 .our-team #alice {
-  top: 245px;
-  left: 21%;
+  top: 44%;
+  left: 11.5%;
   transform: rotate(2deg);
-  padding-right: 40px;
 }
 @media (max-width: 500px) {
   .our-team #alice {
-    top: 120px;
-    left: 7%;
+    left: 11%;
   }
 }
 .our-team #mike {
-  top: 245px;
-  left: 38%;
+  top: 44%;
+  left: 34.5%;
   transform: rotate(2deg);
-  padding-right: 45px;
 }
-@media (max-width: 500px) {
-  .our-team #mike {
-    top: 120px;
-    left: 30.5%;
-  }
-}
-.our-team #helen {
-  top: 215px;
-  left: 55.7%;
+.our-team #elen {
+  top: 39%;
+  left: 60.5%;
   transform: rotate(13deg);
-  padding-right: 35px;
-}
-@media (max-width: 500px) {
-  .our-team #helen {
-    top: 103px;
-    left: 55.1%;
-  }
 }
 .our-team #bela {
-  top: 230px;
-  left: 71.5%;
+  top: 42%;
+  left: 81%;
   transform: rotate(-7deg);
-  padding-right: 35px;
-}
-@media (max-width: 500px) {
-  .our-team #bela {
-    top: 111px;
-    left: 76.9%;
-  }
 }
 .modal {
   display: none;
@@ -1040,13 +1063,13 @@ form .btn:hover {
 .modal-mike p {
   background-color: #106962;
 }
-.modal-helen h3 {
+.modal-elen h3 {
   color: #ffd400;
 }
-.modal-helen h4 {
+.modal-elen h4 {
   background-color: #ffd400;
 }
-.modal-helen p {
+.modal-elen p {
   background-color: #a57a03;
 }
 .modal-bela h3 {
@@ -1068,7 +1091,12 @@ form .btn:hover {
   justify-content: space-between;
   align-items: baseline;
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
+  .testimonials {
+    padding: 0 2%;
+  }
+}
+@media (max-width: 600px) {
   .testimonials {
     flex-wrap: wrap;
     padding-top: 20px;
@@ -1085,6 +1113,13 @@ form .btn:hover {
   text-transform: uppercase;
   background-color: #D8D8D8;
   z-index: 2;
+}
+@media (max-width: 750px) {
+  .testimonials h3 {
+    width: 70%;
+    right: 15%;
+    top: -5rem;
+  }
 }
 @media (max-width: 500px) {
   .testimonials h3 {
@@ -1115,6 +1150,8 @@ form .btn:hover {
 .locations {
   position: relative;
   margin-bottom: 100px;
+  padding: 0;
+  margin: 0 auto;
 }
 .locations h3 {
   position: absolute;
@@ -1129,6 +1166,13 @@ form .btn:hover {
   padding: 2.6rem 0;
   z-index: 2;
 }
+@media (max-width: 750px) {
+  .locations h3 {
+    width: 70%;
+    right: 15%;
+    bottom: -5rem;
+  }
+}
 @media (max-width: 500px) {
   .locations h3 {
     width: 90%;
@@ -1136,17 +1180,25 @@ form .btn:hover {
     bottom: -7rem;
   }
 }
-@media (max-width: 500px) {
+.location-tabs {
+  width: 59.5%;
+  margin: 0 auto;
+  padding: 0;
+}
+@media (max-width: 750px) {
   .location-tabs {
     padding: 0;
+    width: 100%;
   }
 }
 .location-tabs .tabs-links {
-  padding: 0 4%;
-  justify-content: flex-start;
+  width: 100%;
+  justify-content: center;
+  padding: 0;
   margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.4);
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .location-tabs .tabs-links {
     flex-direction: row;
     padding: 0;
@@ -1154,20 +1206,20 @@ form .btn:hover {
   }
 }
 .location-tabs .tabs-links .tabs-link {
-  border-bottom: none;
+  flex: 1;
 }
 .location-tabs .tabs-links .tabs-link:nth-child(2),
 .location-tabs .tabs-links .tabs-link:nth-child(3) {
   border-left: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .location-tabs .tabs-links .tabs-link {
     margin: 0;
     flex: 1;
   }
 }
 .location-tabs .tabs-links .tabs-link-selected {
-  background-color: #D8D8D8;
+  background-color: #d8d8d8;
   color: #222222;
 }
 .carousel {
@@ -1178,7 +1230,7 @@ form .btn:hover {
   height: 500px;
   position: relative;
   overflow: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 @media (min-width: 1200px) {
   .carousel {
@@ -1199,12 +1251,18 @@ form .btn:hover {
   height: 50px;
   cursor: pointer;
 }
+@media (max-width: 750px) {
+  .carousel .left-button,
+  .carousel .right-button {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
 .carousel .left-button:hover,
 .carousel .right-button:hover {
   color: black;
   border: 2px solid black;
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .carousel .left-button:hover,
   .carousel .right-button:hover {
     border: none;
@@ -1212,7 +1270,7 @@ form .btn:hover {
     z-index: 99;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .carousel .left-button,
   .carousel .right-button {
     position: absolute;
@@ -1228,7 +1286,7 @@ form .btn:hover {
   left: 25px;
   transform: translate(0, -50%);
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .carousel .left-button {
     left: 0;
     z-index: 3;
@@ -1239,7 +1297,7 @@ form .btn:hover {
   right: 25px;
   transform: translate(0, -50%);
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .carousel .right-button {
     right: 0;
     z-index: 3;
@@ -1251,7 +1309,7 @@ form .btn:hover {
   display: none;
   position: relative;
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .carousel .carousel-city {
     width: 100%;
   }
@@ -1267,10 +1325,14 @@ form .btn:hover {
   height: 40%;
   animation: sticky 1.5s;
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
+  .carousel .carousel-city .carousel-content {
+    top: 2%;
+  }
+}
+@media (max-width: 600px) {
   .carousel .carousel-city .carousel-content {
     padding: 5px 10px;
-    top: 2%;
     height: 18.3%;
   }
 }
@@ -1278,7 +1340,7 @@ form .btn:hover {
   color: #4987fa;
   margin-bottom: 15px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .carousel .carousel-city .carousel-content h4 {
     margin-bottom: 10px;
     font-size: 1.6rem;
@@ -1288,7 +1350,7 @@ form .btn:hover {
   color: #505050;
   font-weight: bold;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .carousel .carousel-city .carousel-content p {
     font-size: 1.2rem;
     line-height: 1.4rem;
@@ -1304,16 +1366,25 @@ form .btn:hover {
   align-items: flex-start;
   margin-bottom: 100px;
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
+  .twitter {
+    padding: 30px 10%;
+  }
+}
+@media (max-width: 600px) {
   .twitter {
     flex-wrap: wrap;
-    padding: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .twitter {
+    padding: 30px 5%;
   }
 }
 .twitter .twitter-timeline {
   width: 45%;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .twitter .twitter-timeline {
     width: 100%;
   }
@@ -1321,20 +1392,20 @@ form .btn:hover {
 .twitter .twitter-timeline:first-child {
   margin-right: 10%;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .twitter .twitter-timeline:first-child {
     margin-right: 0;
   }
 }
 .twitter #twitter-widget-0,
 .twitter #twitter-widget-1 {
-  min-height: 520px !important;
+  min-height: 600px !important;
   height: 100%;
   background-color: white;
   border-radius: 5px;
   overflow: hidden;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .twitter #twitter-widget-0,
   .twitter #twitter-widget-1 {
     min-height: 0px !important;
@@ -1343,7 +1414,7 @@ form .btn:hover {
 .twitter .clear {
   display: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .twitter .clear {
     display: block;
     height: 30px;
@@ -1366,6 +1437,13 @@ form .btn:hover {
   height: 8rem;
   padding: 2.6rem 0;
 }
+@media (max-width: 750px) {
+  .partners h3 {
+    width: 70%;
+    right: 15%;
+    top: -5rem;
+  }
+}
 @media (max-width: 500px) {
   .partners h3 {
     width: 90%;
@@ -1377,7 +1455,7 @@ form .btn:hover {
   width: 64%;
   margin: 0 18%;
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .partners .partners-background {
     width: 100%;
     margin: 0;
@@ -1394,7 +1472,7 @@ form .btn:hover {
 .partners .apple {
   padding: 15px;
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .partners .apple {
     width: 20%;
     right: 5%;
@@ -1405,7 +1483,7 @@ form .btn:hover {
   right: 40%;
   padding: 15px;
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .partners .amazon {
     width: 36%;
     right: 32%;
@@ -1417,7 +1495,7 @@ form .btn:hover {
   width: 14%;
   padding: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .partners .lambda {
     width: 20%;
     right: 5%;
@@ -1428,7 +1506,7 @@ form .btn:hover {
   left: 20%;
   padding: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .partners .target {
     width: 20%;
     left: 5%;
