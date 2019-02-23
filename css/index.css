@@ -1213,6 +1213,9 @@ form .btn:hover {
     flex: 1;
   }
 }
+.location-tabs .tabs-links .tabs-link:hover {
+  color: #222222;
+}
 .location-tabs .tabs-links .tabs-link-selected {
   background-color: #d8d8d8;
   color: #222222;
@@ -1394,7 +1397,6 @@ form .btn:hover {
 }
 .twitter #twitter-widget-0,
 .twitter #twitter-widget-1 {
-  min-height: 600px !important;
   height: 100%;
   background-color: white;
   border-radius: 5px;
