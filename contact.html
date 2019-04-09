@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Contact Us</title>
+	<title>S&J - Contact Us</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">
 	<!--[if IE]>
@@ -12,50 +13,146 @@
 
 <body>
 
-	<h1>Contact</h1>
+	<!-- NAVIGATION -->
+	<nav>
+		<div class="top container">
+			<h4><a href="index.html">S&J</a></h4>
+			<img class="hamburger-open" src="./img/nav-hamburger.png" alt="Open hamburger image">
+			<img class="hamburger-close" src="./img/nav-hamburger-close.png" alt="Close hamburger image">
+		</div>
+		<div class="menu">
+			<a href="index.html">Home</a>
+			<a href="services.html">Services</a>
+			<a href="#">Contact</a>
+			<a href="about-us.html">About Us</a>
+		</div>
+	</nav> <!-- navigation -->
 
-<!-- Contactd Us Content 
-  Contact Us
-  
-Get In Touch
+	<!-- HEADER -->
+	<header class="container contact">
+		<img class="contact-header-img" id="contact-header-img" src="./img/contact/contact-jumbotron.png" alt="Image of futuristic building">
+		<img class="contact-mobile-header-img" id="contact-mobile-header-img" src="./img/contact/contact-mobile-jumbotron.png" alt="Image of futuristic building">
 
-Email Address
-Enter Email
-We'll never share your email with anyone else.
+		<h1>Contact Us</h1>
+	</header>
 
-How many buildings do you need planned?
-1-5
+<div class="contact-main-content container">
 
-Provide a brief overview of your project needs:
+	<div class="contact-form">
+		<h3>Get In Touch</h3>
+		<form>
+			<fieldset>
+				<legend>Email Address</legend>
+				<input type="text" class="contact-text-input" placeholder="Enter email">
+				<p class="small-text">We'll never share your email with anyone else.</p>
+			</fieldset>
 
-I am a small business
-I am a residential owner
-I am a corporation
+			<fieldset>
+				<legend>How many buildings do you need planned?</legend>
+				<select id="number-of-buildings">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</fieldset>
 
-Submit
+			<fieldset>
+				<legend>Provide a brief overview of your project needs:</legend>
+				<textarea name="project-overview" id="project-overview" cols="30" rows="5"></textarea>
+			</fieldset>
+			
+			<fieldset class="radio-buttons">
+				<label for="small-business"><input id="small-business" type="radio" name="customer-type" checked="checked"> I am a small business</label><br>
+				<label for="residential-owner"><input id="residential-owner" type="radio" name="customer-type"> I am a residential owner</label><br>
+				<label for="corporation"><input id="corporation" type="radio" name="customer-type"> I am a corporation</label>
+			</fieldset>
 
-Where We Work
+			<button type="submit" class="btn">Submit</button>
 
-New York
-123 Lane
-Suite 100
-Albany, NY 12345
-202 555 0144
+		</form>
 
-Florida
-Ocean Drive
-Suite 201
-Orlando, FL 22345
-502 555 0144
+	</div>
 
-California
-Mountain Street
-Suite 105
-San Diego, CA 22345
-702 555 0144
+	<div class="contact-addresses">
 
--->
+		<h3>Where We Work</h3>
+
+		<address class="contact-address">
+			<h4 class="contact-address-header">New York</h4>
+			<p>123 Lane<br>
+			Suite 100<br>
+			Albany, NY 12345<br>
+			202 555 0144</p>
+		</address>
+
+		<address class="contact-address">
+			<h4 class="contact-address-header">Florida</h4>
+			<p>Ocean Drive<br>
+			Suite 201<br>
+			Orlando, FL 22345<br>
+			502 555 0144</p>
+		</address>
+
+		<address class="contact-address">
+			<h4 class="contact-address-header">California</h4>
+			<p>Mountain Street<br>
+			Suite 105<br>
+			San Diego, CA 22345<br>
+			702 555 0144</p>
+		</address>
+		
+	</div>
+
+</div>
+
+<!-- CONTACT -->
+<div class="bottom">
+	<section class="contact-bottom container">
+		<form>
+			<h5>Interested in starting a project?</h5>
+			<h5>Let’s talk:</h5>
+			
+			<input type="text" placeholder="Enter email">
+			
+			<p class="footer">We'll never share your email with anyone else.</p>
+		</form>
+		
+		<address class="address new-york">
+			<h5>New York</h5>
+			<p class="footer">123 Lane<br>
+				Suite 100<br>
+				Albany, NY 12345</p>
+			<p class="footer">202 555 0144</p>
+		</address>
+
+		<address class="address florida">
+			<h5>Florida</h5>
+			<p class="footer">Ocean Drive<br>
+				Suite 201<br>
+				Orlando, FL 22345</p>
+			<p class="footer">502 555 0144</p>
+		</address>
+
+		<address class="address california">
+			<h5>California</h5>
+			<p class="footer">Mountain Street<br>
+				Suite 105<br>
+				San Diego, CA 22345</p>
+			<p class="footer">702 555 0144</p>
+		</address>
+		
+	</section> <!-- contact -->
+
+	<!-- FOOTER-->
+	<footer class="container">
+		<p class="footer">Copyright © 2018 Smith and Jones</p>
+	</footer> <!-- footer -->
+</div>
+
 
 	<script src="js/index.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
 </body>
 </html>

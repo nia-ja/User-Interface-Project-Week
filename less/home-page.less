@@ -1,0 +1,154 @@
+// HEADER styling
+header {
+    position: relative;
+    .header-img {
+        @media @mobile {
+            display: none;
+        }
+    }
+    .mobile-header-img {
+        display: none;
+        @media @mobile {
+            display: block;
+            width: 100%;
+        }
+    }
+    h1 {
+        position: absolute;
+        bottom: 50px;
+        left: 5%;
+        @media @mobile {
+            left: 5%;
+            bottom: 30px;
+            font-size: 5.4rem;
+            line-height: 6.7rem;
+        }
+    }
+}
+
+
+// TOP CONTENT styling
+.content, .content-reverse {
+    .flex;
+    padding: 40px 5%;
+    @media @mobile {
+        margin: 0;
+        padding: 30px 5% 0 5%;
+    }
+    .content-text {
+        width: 50%;
+        @media @mobile {
+            width: 100%;
+        }
+    }
+    .content-img {
+        width: 50%;
+        @media @mobile {
+            display: none;
+        }
+    }
+    .mobile-content-img {
+        display: none;
+        @media @mobile {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    h3, p {
+        margin-bottom: 20px;
+    }
+    .btn {
+        .button();
+    }
+}
+// Top content .content
+.content {
+    @media @mobile {
+        flex-direction: column-reverse;
+    }
+    .content-text {
+        margin-right: 2%;
+        @media @mobile {
+        margin-right: 0;
+        }
+    }
+}
+// Top content .content-reverse
+.content-reverse {
+    flex-direction: row-reverse;
+    @media @mobile {
+        flex-direction: column-reverse;
+    }
+    .content-text {
+        margin-left: 2%;
+        @media @mobile {
+            margin-left: 0;
+        }
+    }
+} // <---- top content
+
+
+// RECENT PROJECTS styling
+.recent-projects {
+    width: 100%;
+    .content-header, .column-content, .column-content-reverse {
+        padding: 40px 5%;
+    }
+    .column-content, .column-content-reverse {
+        @media @mobile {
+            padding: 0;
+        }
+        .content-top {
+            position: relative;
+            display: inline-block;
+            max-width: 100%;
+            margin-bottom: 60px;
+            @media @mobile {
+                width: 100%;
+            }
+            .projects-img {
+                display: block;
+                width: 100%;
+                @media @mobile {
+                    display: none;
+                }
+            }
+            .mobile-projects-img {
+                display: none;
+                @media @mobile {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            h3 {
+                text-align: center;
+                height: 42px;
+                position: absolute;
+                top: 80%;
+                width: 40%;
+                min-width: 65px;
+                background-color: #D8D8D8;
+                padding: 30px 1% 50px 1%;
+                @media @mobile {
+                    width: 90%;
+                    top: 95%;
+                    left: 5%;
+                    right: 5%;
+                }
+            }
+        } 
+        p {
+            margin: 20px 27%;
+            @media @mobile {
+                margin: 30px 5%;
+            }
+        }
+        
+    }
+    .column-content {
+       h3 {
+        right: 0;
+       } 
+    }
+} // <--- recent projects

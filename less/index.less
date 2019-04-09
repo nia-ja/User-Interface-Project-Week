@@ -57,4 +57,75 @@ table{
   border-spacing:0;
 }
 
-/* Your Code Goes Here */
+/* Global */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: @general-color;
+  background-color: @general-background;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 4.8rem;
+  line-height: 8.5rem;
+  color: @nav-color;
+  &:hover {
+    color: @nav-hover-color;
+  } 
+}
+
+h1 {
+  font-size: 6.4rem;
+  font-weight: bold;
+  line-height: 7.5rem;
+  color: @header-color;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 2.8rem;
+  color: @subheaders-color;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: @logo-color;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+
+/* Imports */
+@import "./variables";
+@import "./mixins";
+@import "./home-page";
+@import "./services.less";
+@import "./navigation";
+@import "./footer";
+@import "./contact.less";
+@import "./about-us.less";

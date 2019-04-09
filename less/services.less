@@ -1,0 +1,125 @@
+// HEADER styling
+header.services {
+    position: relative;
+    .services-header-img {
+        @media @mobile {
+            display: none;
+        }
+    }
+    .mobile-services-header-img {
+        display: none;
+        @media @mobile {
+            display: block;
+            width: 100%;
+        }
+    }
+    h1 {
+        position: absolute;
+        bottom: 15px;
+        left: 5%;
+    }
+}
+
+// TOP CONTENT styling
+.services-top-content {
+    p {
+        padding: 50px 5%;
+    }
+}
+
+// TAB COMPONENT styling
+.tabs {
+    padding: 0 5%;
+}
+// TABS LINKS
+.tabs-links {
+    .flex;
+    margin-bottom: 40px;
+    cursor: pointer;
+    @media @tablet1 {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .tabs-link {
+        border: 1px solid @dark-gray;
+        width: 23%;
+        padding: 15px 2px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.9rem;
+        @media @tablet1 {
+            width: 80%;
+            margin: 10px auto;
+        }
+        @media @mobile {
+            width: 100%;
+        }
+    }
+    .tabs-link-selected {
+        color: @white;
+        background-color: #5E9EB8;
+    }
+}
+// TABS ITEMS
+.tabs-items {
+    margin-bottom: 80px;    @media @mobile {
+        margin-bottom: 50px;
+    }
+}
+.tabs-item {
+    display: none;
+}
+.tabs-item-selected {
+    .flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    @media @mobile {
+        margin-top: 0;
+    }
+    .tabs-item-title {
+        width: 100%;
+        font-weight: bold;
+        font-size: 2.8rem;
+        margin-bottom: 15px;
+        @media @mobile {
+            margin-bottom: 30px;
+        }
+    }
+    .tab-item-text {
+        margin-right: 4%;
+        width: 48%;
+        @media @tablet1 {
+            width: 100%;
+        }
+        .tabs-item-content {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            &:first-child {
+                margin-bottom: 40px;
+                @media @tablet1 {
+                    margin-bottom: 30px;
+                }
+            }
+            @media @tablet1 {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .tab-item-image {
+        display: block;
+        width: 48%;
+        @media @tablet1 {
+            width: 100%;
+        }
+        @media @mobile {
+            display: none;
+        }
+    }
+    .mobile-tab-item-image {
+        display: none;
+        @media @mobile {
+            display: block;
+            width: 100%;
+        }
+    }
+}

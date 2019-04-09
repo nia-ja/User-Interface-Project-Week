@@ -1,0 +1,67 @@
+.bottom {
+    background-color: #828282;
+    color: @footer-color;
+    h5 {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        @media @mobile {
+            line-height: 2.8rem;
+            font-size: 2.4rem;
+        }
+    }
+    p.footer {
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+        @media @mobile {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+        }
+    }
+}
+
+// CONTACT
+.contact-bottom {
+    .flex(space-between; baseline);
+    padding: 50px 5% 30px 5%;
+    @media @tablet1 {
+        flex-direction: column;
+        width: 100%;
+        padding: 40px 5% 0 5%;
+    }
+    form {
+        @media @tablet1 {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            font-size: 1.6rem;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    }
+    .address {
+        h5 {
+            margin-bottom: 10px;
+        }
+        @media @tablet1 {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+// FOOTER
+footer {
+    text-align: center;
+    @media @tablet1 {
+        text-align: left;
+        padding-left: 3%;
+    }
+    p.footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
